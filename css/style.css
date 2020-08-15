@@ -332,21 +332,17 @@ header .intro-text {
 	padding: 100px 0 60px 0;
 	width: 100%;
 	background-size: cover;
-	background: url(../img/po3.png) center center no-repeat;
-	/* background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%); */
+	/* background: url(../img/koro.png) center center no-repeat; */
+	background: url(../img/koro.png), linear-gradient(to right, #6372ff 0%, #5ca9fb 100%),  center center no-repeat;
 	color: rgba(255,255,255,.75);
 }
-.contact {
-	display: table;
+#contact-fg {
+	padding: 100px 0 60px 0;
 	width: 100%;
-	height: 100%;
-	padding: 0;
-	background: url(../img/po.png) center center no-repeat;
-	background-color: #e5e5e5;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
 	background-size: cover;
-	-o-background-size: cover;
+	background: url(../img/koro.png) center center no-repeat;
+	/* background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%); */
+	color: rgba(255,255,255,.75);
 }
 #contact .section-title {
 	margin-bottom: 40px;
