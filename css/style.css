@@ -335,15 +335,16 @@ header .intro-text {
 	/* background: url(../img/koro.png) center center no-repeat; */
 	background: url(../img/koro.png), linear-gradient(to right, #6372ff 0%, #5ca9fb 100%),  center center no-repeat;
 	color: rgba(255,255,255,.75);
+
+
 }
-#contact-fg {
-	padding: 100px 0 60px 0;
-	width: 100%;
-	background-size: cover;
-	background: url(../img/koro.png) center center no-repeat;
-	/* background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%); */
-	color: rgba(255,255,255,.75);
+/* Mobile friendly option. */
+@media (max-width: 900px) {
+	#contact {
+		background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
+	}
 }
+
 #contact .section-title {
 	margin-bottom: 40px;
 }
