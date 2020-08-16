@@ -74,10 +74,26 @@ hr {
 }
 #menu a.navbar-brand {
 	font-family: 'Poppins', sans-serif;
-	font-size: 26px;
+	font-size: 30px;
 	font-weight: 300;
 	color: #333;
+	/* color: #5ca9fb; */
 }
+.span-bracket{
+	font-family: 'Poppins', sans-serif;
+	color: #6372ff;
+	font-size: 35px;
+	padding: 0px 0px;
+	font-weight: 400;
+}
+
+.span-2{
+	font-family: 'Poppins', sans-serif;
+	font-size: 30px;
+	font-weight: 200;
+	color: #6372ff;
+}
+
 #menu.navbar-default .navbar-nav > li > a {
 	font-family: 'Lato', sans-serif;
 	text-transform: uppercase;
@@ -148,6 +164,7 @@ hr {
 .section-title p {
 	font-size: 18px;
 }
+
 .btn-custom {
 	font-family: 'Raleway', sans-serif;
 	text-transform: uppercase;
