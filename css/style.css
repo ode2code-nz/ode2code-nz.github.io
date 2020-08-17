@@ -393,7 +393,7 @@ header .intro-text {
 }
 
 /* Bigger monitors */
-@media (min-width: 1900px) {
+@media (min-width: 1450px) {
 	#contact {
 		background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
 	}
