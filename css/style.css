@@ -376,17 +376,24 @@ header .intro-text {
 
 /* Contact Section */
 #contact {
-	padding: 100px 0 60px 0;
+	padding: 100px 0 100px 0;
 	width: 100%;
 	background-size: cover;
 	/* background: url(../img/koro.png) center center no-repeat; */
-	background: url(../img/koro.png), linear-gradient(to right, #6372ff 0%, #5ca9fb 100%),  center center no-repeat;
+	background: url(../img/koro.png), no-repeat, linear-gradient(to right, #6372ff 0%, #5ca9fb 100%),  center center no-repeat;
 	color: rgba(255,255,255,.75);
 
 
 }
 /* Mobile friendly option. */
-@media (max-width: 900px) {
+@media (max-width: 1200px) {
+	#contact {
+		background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
+	}
+}
+
+/* Bigger monitors */
+@media (min-width: 1900px) {
 	#contact {
 		background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
 	}
@@ -479,6 +486,7 @@ color: #777;
 }
 #contact .contact-item {
 	margin: 20px 0;
+	color: #fff;
 }
 #contact .contact-item span {
 	color: rgba(255,255,255,1);
