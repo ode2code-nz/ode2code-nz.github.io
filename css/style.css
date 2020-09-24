@@ -199,7 +199,6 @@ hr {
 }
 a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn.active.focus {
 	outline: none;
-	outline-offset: none;
 }
 /* Header Section */
 .intro {
@@ -208,10 +207,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	padding: 0;
 	background: url(../img/intro-bg.jpg) center center no-repeat;
 	background-color: #e5e5e5;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
 	background-size: cover;
-	-o-background-size: cover;
 }
 .intro .overlay {
 	background: rgba(0,0,0,0.2);
