@@ -1,7 +1,7 @@
 ﻿@import url('open-iconic/font/css/open-iconic-bootstrap.min.css');
 
 html, body {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif, Poppins;
 }
 
 a, .btn-link {
@@ -48,3 +48,56 @@ a, .btn-link {
         right: 0.75rem;
         top: 0.5rem;
     }
+
+
+.btn-o2c {
+    background-image: linear-gradient(to right, #072450 5%, #289fb1 100%);
+    background-color: #072450;
+    -webkit-border-top-left-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+    border-top-left-radius: 3px;
+    -webkit-border-top-right-radius: 20px;
+    -moz-border-radius-topright: 20px;
+    border-top-right-radius: 20px;
+    -webkit-border-bottom-right-radius: 3px;
+    -moz-border-radius-bottomright: 3px;
+    border-bottom-right-radius: 3px;
+    -webkit-border-bottom-left-radius: 20px;
+    -moz-border-radius-bottomleft: 20px;
+    border-bottom-left-radius: 20px;
+   
+    border: 1px solid #00dff8;
+    display: inline-block;
+    color: #ffffff;
+    font-family: Poppins;
+    font-size: 15px;
+    font-weight: normal;
+    font-style: normal;
+    height: 45px;
+    line-height: 45px;
+    width: 158px;
+    text-decoration: none;
+    text-align: center;
+}
+
+    .btn-o2c:hover {
+        background-image: linear-gradient(to right, #072450 5%, #289fb1 100%);
+        background-color: #289fb1;
+        display: inline-block;
+        color: #ffffff;
+        font-family: Poppins;
+        font-size: 15px;
+        font-weight: normal;
+        font-style: normal;
+        height: 45px;
+        line-height: 45px;
+        width: 158px;
+        text-decoration: none;
+        text-align: center;
+        border: 1px solid #ffffff;
+    }
+
+.btn-o2c:active {
+    position: relative;
+    top: 1px;
+}

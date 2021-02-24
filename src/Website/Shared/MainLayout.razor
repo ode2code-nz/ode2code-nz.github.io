@@ -1,17 +1,41 @@
 ﻿@inherits LayoutComponentBase
 
 <div class="page">
-    <div class="sidebar">
-        <NavMenu />
-    </div>
 
     <div class="main">
+
         <div class="top-row px-4">
-            <a href="http://blazor.net" target="_blank" class="ml-md-auto">About</a>
+            <ul class="nav flex-row">
+                <li class="nav-item px-3">
+                    <NavLink class="nav-link" href="" Match="NavLinkMatch.All">Home</NavLink>
+                </li>
+                <li class="nav-item px-3">
+                    <NavLink class="nav-link" href="about">About</NavLink>
+                </li>
+                <li class="nav-item px-3">
+                    <NavLink class="nav-link" href="how-we-work">How We Work</NavLink>
+                </li>
+                <li class="nav-item px-3">
+                    <NavLink class="nav-link" href="contact">Contact</NavLink>
+                </li>
+            </ul>
         </div>
+
+        @*<NavMenu></NavMenu>*@
 
         <div class="content px-4">
             @Body
         </div>
     </div>
 </div>
+
+@code {
+    private bool collapseNavMenu = true;
+
+    private string NavMenuCssClass => collapseNavMenu ? "collapse" : null;
+
+    private void ToggleNavMenu()
+    {
+        collapseNavMenu = !collapseNavMenu;
+    }
+}
