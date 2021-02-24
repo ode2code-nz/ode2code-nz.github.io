@@ -53,6 +53,8 @@ a, .btn-link {
 .btn-o2c {
     background-image: linear-gradient(to right, #072450 5%, #289fb1 100%);
     background-color: #072450;
+    position: relative;
+
     -webkit-border-top-left-radius: 3px;
     -moz-border-radius-topleft: 3px;
     border-top-left-radius: 3px;
