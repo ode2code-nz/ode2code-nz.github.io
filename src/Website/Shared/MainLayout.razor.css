@@ -15,7 +15,6 @@
 
 .top-row {
     background: #0D1732;
-    border-bottom: 1px solid #d6d5d5;
     justify-content: flex-end;
     height: 4rem;
     display: flex;
@@ -32,16 +31,6 @@
         text-overflow: ellipsis;
     }
 
-.main > footer {
-    height: 3rem;
-    max-height: 3rem;
-}
-
-.main > .content {
-    height: calc(100vh - 9.5rem);
-    max-height: calc(100vh - 9.5rem);
-    overflow-y: auto;
-}
 
 
 @media (max-width: 640.98px) {
@@ -74,10 +63,5 @@
         position: sticky;
         top: 0;
         z-index: 1;
-    }
-
-    .main > div {
-        padding-left: 2rem !important;
-        padding-right: 1.5rem !important;
     }
 }
