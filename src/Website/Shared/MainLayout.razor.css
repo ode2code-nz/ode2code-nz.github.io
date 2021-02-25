@@ -32,6 +32,18 @@
         text-overflow: ellipsis;
     }
 
+.main > footer {
+    height: 3rem;
+    max-height: 3rem;
+}
+
+.main > .content {
+    height: calc(100vh - 9.5rem);
+    max-height: calc(100vh - 9.5rem);
+    overflow-y: auto;
+}
+
+
 @media (max-width: 640.98px) {
     .top-row:not(.auth) {
         display: none;

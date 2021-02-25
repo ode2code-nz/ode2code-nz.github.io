@@ -1,6 +1,8 @@
 ﻿@import url('open-iconic/font/css/open-iconic-bootstrap.min.css');
 
-html, body {
+html, body, #app {
+    height: 100vh;
+    max-height: 100vh;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif, Poppins;
 }
 
@@ -102,4 +104,73 @@ a, .btn-link {
 .btn-o2c:active {
     position: relative;
     top: 1px;
+}
+
+.section {
+    padding: inherit;
+    padding-top: 4em;
+    padding-bottom: 6em;
+    padding-left: 15rem;
+    padding-right: 15rem;
+    align-content:center;
+}
+
+.nz-section {
+    padding: inherit;
+    padding-top: 4em;
+    padding-bottom: 6em;
+    padding-left: 15rem;
+    padding-right: 15rem;
+
+    background-image: url("../src/NZ-space.jpg");
+    min-height: 20rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero {
+ 
+    padding-top: 4em;
+    padding-bottom: 6em;
+    padding-left: 0;
+    padding-right: 0;
+    background-image: url("../src/hero.jpg");
+    min-height: 25rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section-heading {
+    text-align: center;
+    font-family: Poppins;
+    font-size: 1.5rem;
+}
+    .section-heading-dark {
+        color: white;
+        text-align: center;
+        font-family: Poppins;
+        font-size: 1.5rem;
+    }
+
+.section-text {
+    font-size: medium;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+}
+    .section-text-dark {
+        color:white;
+        font-size: medium;
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+@media (max-width: 1100px) {
+    .section {
+        padding-left: 0;
+        padding-right: 0;
+    }
 }
