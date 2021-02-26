@@ -5,7 +5,7 @@ html, body{
 }
 
 a, .btn-link {
-    color: #0366d6;
+    color: white !important;
 }
 
 .btn-primary {
@@ -141,12 +141,68 @@ div > .footer {
     padding-left: 0;
     padding-right: 0;
     background-image: url("../src/hero-img.jpg");
-    
-    min-height: 43rem;
+    min-height: 42rem;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    align-content:center;
+    text-align:center;
+    
 }
+
+.hero-font {
+    font-size: large;
+    color: white;
+    padding-top: 10rem;
+    padding-bottom: 4rem;
+}
+
+.hero-btn {
+    background-image: linear-gradient(to right, #6294DF 5%, #48C3D6 100%);
+    background-color: #072450;
+    position: relative;
+    -webkit-border-top-left-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+    border-top-left-radius: 3px;
+    -webkit-border-top-right-radius: 20px;
+    -moz-border-radius-topright: 20px;
+    border-top-right-radius: 20px;
+    -webkit-border-bottom-right-radius: 3px;
+    -moz-border-radius-bottomright: 3px;
+    border-bottom-right-radius: 3px;
+    -webkit-border-bottom-left-radius: 20px;
+    -moz-border-radius-bottomleft: 20px;
+    border-bottom-left-radius: 20px;
+    border: 1px solid #00dff8;
+    display: inline-block;
+    color: #ffffff;
+    font-family: Poppins;
+    font-size: 13px;
+    font-weight: normal;
+    font-style: normal;
+    height: 45px;
+    line-height: 45px;
+    width: 158px;
+    text-decoration: none;
+    text-align: center;
+}
+
+    .hero-btn:hover {
+        background-image: linear-gradient(to right, #6294DF 5%, #48C3D6 100%);
+        background-color: #289fb1;
+        display: inline-block;
+        color: #ffffff;
+        font-family: Poppins;
+        font-size: 13px;
+        font-weight: normal;
+        font-style: normal;
+        height: 45px;
+        line-height: 45px;
+        width: 158px;
+        text-decoration: none;
+        text-align: center;
+        border: 1px solid #ffffff;
+    }
 
 .cta {
     padding-left: 0;
@@ -156,33 +212,65 @@ div > .footer {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    text-align:center
+}
+
+.hww {
+    
+    font-family:Poppins;
+    font-size:medium;
+
+    min-height:1000px;
+    background-image: linear-gradient(#15A2BF, #115C72 40%, #05274A);
+}
+
+.vl {
+    border-left: 3px solid white;
+    height: 1000px;
+    position: absolute;
+    left: 50%;
+    margin-left: -3px;
+    
 }
 
 .section-heading {
     text-align: center;
     font-family: Poppins;
     font-size: 1.5rem;
+    padding-top:1.5em;
+    padding-bottom: 1.5em;
 }
-    .section-heading-dark {
-        color: white;
-        text-align: center;
-        font-family: Poppins;
-        font-size: 1.5rem;
-    }
+.section-heading-dark {
+    color: white;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 1.5rem;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+}
 
 .section-text {
+    font-family: Poppins;
     font-size: medium;
     padding-left: 3rem;
     padding-right: 3rem;
     padding-top: 4rem;
     padding-bottom: 3rem;
 }
-    .section-text-dark {
-        color:white;
-        font-size: medium;
-        padding-left: 3rem;
-        padding-right: 3rem;
-    }
+.section-text-dark {
+    font-family: Poppins;
+    color: white;
+    font-size: medium;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.index-text {
+    font-family:Poppins;
+    font-size: medium;
+    padding-left: 8rem;
+    padding-right: 8rem;
+}
 
 
 .footer {
