@@ -1,18 +1,24 @@
 ﻿@page "/contact"
+@using System.Net.Mail;
+
+@if (IsSent)
+{
+    <p class="alert-info">Message sent successfully</p>
+}
 
 <div class="section hero" style="align-content:center">
     <div style="display: inline-block; align-content: center; text-align: center; width: 60%;">
         <h1 class="section-heading-dark">Contact Us</h1>
-        <h6 class="tagline">If you think we can help with your unique problem get in touch.</h6>
-        
+        <h6 class="tagline">If you think we can help with your unique problem get in touch and we will get back to you.</h6>
+
 
         <EditForm Model="message">
             <hr />
-            <InputText @bind-Value="message.Name" class="contact-input"></InputText>
+            <InputText @bind-Value="message.Name" class="contact-input" placeholder="Name"></InputText>
             <hr />
-            <InputText @bind-Value="message.Email" class="contact-input"></InputText>
+            <InputText @bind-Value="message.Email" class="contact-input" placeholder="Email"></InputText>
             <hr />
-            <InputTextArea @bind-Value="message.Content" class="contact-input"></InputTextArea>
+            <InputTextArea @bind-Value="message.Content" class="contact-input" placeholder="Message"></InputTextArea>
             <hr />
             <button type="submit" @onclick="SendEmail" class="hero-btn">Submit Inquiry</button>
         </EditForm>
@@ -22,21 +28,42 @@
 <Footer></Footer>
 
 @code {
+    Boolean IsSent = false;
+    Boolean error = false;
     Message message = new Message();
 
-    public class Message {
+    public class Message
+    {
         public string Name { get; set; } = "";
         public string Email { get; set; } = "";
         public string Content { get; set; } = "";
-
     }
-
 
     public void SendEmail()
     {
+        MailMessage mailMsg = new MailMessage();
+        mailMsg.From = new MailAddress("rachel@ode2code.co.nz", "ode2code Inquiry");
+        mailMsg.To.Add(new MailAddress("rachel@ode2code.co.nz", "ode2code"));
+        mailMsg.Subject = "ode2code Website Enquiry";
+        mailMsg.IsBodyHtml = false;
+        mailMsg.Body = "Inquiry recieved from " + message.Name + "\n" + "Email address: " + message.Email + "\n" + message.Content;
 
-        message.Name = "";
-        message.Email = "";
-        message.Content = "";
+        SmtpClient smtpClient = new SmtpClient("smtp.sendgrid.net", 587);
+        System.Net.NetworkCredential credentials = new System.Net.NetworkCredential("apikey", "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");
+        smtpClient.Credentials = credentials;
+        mailMsg.BodyEncoding = System.Text.Encoding.GetEncoding("utf-8");
+
+        try
+        {
+            smtpClient.Send(mailMsg);
+            message = new Message();
+        }
+        catch (Exception e)
+        {
+            error = true;
+        }
+
+        IsSent = true;
     }
+
 }

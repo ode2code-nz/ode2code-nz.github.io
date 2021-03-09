@@ -60,4 +60,8 @@
     <UpToDateCheckInput Remove="Shared\Footer.razor" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="SendGrid" Version="9.22.0" />
+  </ItemGroup>
+
 </Project>
