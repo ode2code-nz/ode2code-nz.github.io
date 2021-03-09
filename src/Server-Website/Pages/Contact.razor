@@ -1,0 +1,42 @@
+﻿@page "/contact"
+
+<div class="section hero" style="align-content:center">
+    <div style="display: inline-block; align-content: center; text-align: center; width: 60%;">
+        <h1 class="section-heading-dark">Contact Us</h1>
+        <h6 class="tagline">If you think we can help with your unique problem get in touch.</h6>
+        
+
+        <EditForm Model="message">
+            <hr />
+            <InputText @bind-Value="message.Name" class="contact-input"></InputText>
+            <hr />
+            <InputText @bind-Value="message.Email" class="contact-input"></InputText>
+            <hr />
+            <InputTextArea @bind-Value="message.Content" class="contact-input"></InputTextArea>
+            <hr />
+            <button type="submit" @onclick="SendEmail" class="hero-btn">Submit Inquiry</button>
+        </EditForm>
+    </div>
+</div>
+
+<Footer></Footer>
+
+@code {
+    Message message = new Message();
+
+    public class Message {
+        public string Name { get; set; } = "";
+        public string Email { get; set; } = "";
+        public string Content { get; set; } = "";
+
+    }
+
+
+    public void SendEmail()
+    {
+
+        message.Name = "";
+        message.Email = "";
+        message.Content = "";
+    }
+}

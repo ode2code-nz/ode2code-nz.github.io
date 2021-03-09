@@ -12,6 +12,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "solution_items", "solution_
 		..\README.md = ..\README.md
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server-Website", "Server-Website\Server-Website.csproj", "{02E7A523-EEE2-479B-A3DD-301DB87ECC7A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -22,6 +24,10 @@ Global
 		{90D2E78F-FF02-49DE-9C08-0E916C812E6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{90D2E78F-FF02-49DE-9C08-0E916C812E6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{90D2E78F-FF02-49DE-9C08-0E916C812E6B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02E7A523-EEE2-479B-A3DD-301DB87ECC7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02E7A523-EEE2-479B-A3DD-301DB87ECC7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02E7A523-EEE2-479B-A3DD-301DB87ECC7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02E7A523-EEE2-479B-A3DD-301DB87ECC7A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
