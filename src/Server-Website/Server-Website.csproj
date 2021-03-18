@@ -6,9 +6,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Update="Pages\Counter.razor">
-      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
-    </Content>
     <Content Update="Pages\HowWeWork.razor">
       <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
     </Content>
@@ -40,7 +37,6 @@
     <_ContentIncludedByDefault Remove="Pages\About.razor" />
     <_ContentIncludedByDefault Remove="Pages\Blog.razor" />
     <_ContentIncludedByDefault Remove="Pages\Contact.razor" />
-    <_ContentIncludedByDefault Remove="Shared\ContactForm.razor" />
     <_ContentIncludedByDefault Remove="Shared\Footer.razor" />
   </ItemGroup>
 
@@ -50,10 +46,6 @@
 
   <ItemGroup>
     <UpToDateCheckInput Remove="Pages\Contact.razor" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <UpToDateCheckInput Remove="Shared\ContactForm.razor" />
   </ItemGroup>
 
   <ItemGroup>

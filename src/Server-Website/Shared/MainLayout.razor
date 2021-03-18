@@ -1,24 +1,28 @@
 ﻿@inherits LayoutComponentBase
-
-<div class="page">
-
-    <div class="main">
-        <NavMenu></NavMenu>
-
-        <div class="content" style="padding-left:0rem !important; padding-right:0rem !important; align-items:center">
-            @Body
-        </div>
-
+    <div class="content" style="padding-left:0rem !important; padding-right:0rem !important; align-items:center !important; text-align:center !important; width:inherit !important;">
+        <Toast />
     </div>
-</div>
 
-@code {
-    private bool collapseNavMenu = true;
+    <div class="page">
+        <div class="main">
+            <NavMenu></NavMenu>
 
-    private string NavMenuCssClass => collapseNavMenu ? "collapse" : null;
 
-    private void ToggleNavMenu()
-    {
-        collapseNavMenu = !collapseNavMenu;
+            <div class="content" style="padding-left:0rem !important; padding-right:0rem !important; align-items:center !important; text-align:center !important">
+
+                @Body
+            </div>
+
+        </div>
+    </div>
+
+    @code {
+        private bool collapseNavMenu = true;
+
+        private string NavMenuCssClass => collapseNavMenu ? "collapse" : null;
+
+        private void ToggleNavMenu()
+        {
+            collapseNavMenu = !collapseNavMenu;
+        }
     }
-}
