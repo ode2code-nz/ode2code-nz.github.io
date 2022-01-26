@@ -1,0 +1,19 @@
+.hero-animation {
+    position: relative;
+    width: 100%;
+    background: #fff;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center center;
+    z-index: 1;
+}
+
+.animation-canvas {
+    position: absolute;
+    z-index: -1;
+}
+
+canvas {
+    height: 100vh;
+    width: 100vw;
+}

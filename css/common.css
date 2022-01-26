@@ -1,0 +1,33 @@
+.center {
+
+}
+
+.left {
+
+}
+
+.right {
+
+}
+
+.white {
+    color: white;
+}
+
+.btn-primary {
+    background: -webkit-linear-gradient(to right, #072450, #0298d7);
+    background: -o-linear-gradient(to right, #072450, #0298d7);
+    background: -moz-linear-gradient(to right, #072450, #0298d7);
+    background: linear-gradient(to right, #072450, #0298d7);
+    width: 275px;
+    height: 45px;
+    border: none;
+    border-radius: 0 10px;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+}
