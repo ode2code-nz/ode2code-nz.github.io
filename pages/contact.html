@@ -63,38 +63,55 @@
              <!--/.navbar-collapse--> 
         <!--</div>
     </nav>-->
+    
+    <div id="contact-header">
+        <div id="contact-header-heading">Contact Us</div>
+        <div id="contact-header-description">Send us a brief description of your requirements so we may go<br />through them before our frist meeting.</div>
+        <div class="contact-items">
+            <div class="contact-item" id="email-link">
+                <img class="contact-item-img" src="../img/email-icon.svg" alt="email-icon"/>
+                <label class="contact-item-label" id="contact-link-email"><span>01.&nbsp;</span>Name</label>
+                <a class ="contact-item-link" href="mail:michael@ode2code.co.nz" >michael@ode2code.co.nz</a>
+            </div>
+            <div class="contact-item" id="phone-link">
+                <img class="contact-item-img" src="../img/phone-icon.svg" alt="phone-icon" />
+                <label class="contact-item-label" id="contact-link-phone"><span>01.&nbsp;</span>Phone</label>
+                <a class ="contact-item-link" href="tel:64-027-348-8482">+64 027 348 8482</a>
+            </div>
 
-
-    <div id="div-form">
-        <form class="gform pure-form pure-form-stacked" method="POST" data-email="example@email.net"
+        </div>
+    </div>
+    <div id="contact-form">
+        <div id="contact-form-header">Book a Free Strategy Session</div>
+        <form id="contact-form-body"class="gform pure-form pure-form-stacked" method="POST" data-email="example@email.net"
               action="https://script.google.com/macros/s/AKfycbzDuAri1eMtcX5cAdsAgfDf2OjQ8_Iwvt5jasVoMWSAIHkFMcAduXZnJqju8mM2-YBC/exec">
             <!-- change the form action to your script url -->
 
             <div class="form-elements">
-                <fieldset class="pure-group">
-                    <label for="name">Name: </label>
+                <fieldset class="contact-field">
+                    <label for="name"><span>01.&nbsp;</span>NAME</label>
                     <input id="name" name="name" placeholder="Your name" />
                 </fieldset>
 
 
-                <fieldset class="pure-group">
-                    <label for="email">Email Address: </label>
+                <fieldset class="contact-field">
+                    <label for="email"><span>02.&nbsp;</span>EMAIL</label>
                     <input id="email" name="email" type="email" value=""
                            required placeholder="Your email address" />
                 </fieldset>
 
-                <fieldset class="pure-group">
-                    <label for="company">Company: </label>
+                <fieldset class="contact-field">
+                    <label for="company"><span>03.&nbsp;</span>COMPANY</label>
                     <input id="color" name="company" placeholder="Name of your company" />
                 </fieldset>
 
-                <fieldset class="pure-group">
-                    <label for="phone">Phone: </label>
+                <fieldset class="contact-field">
+                    <label for="phone"><span>04.&nbsp;</span>PHONE</label>
                     <input id="color" name="phone" placeholder="Your phone number" />
                 </fieldset>
 
-                <fieldset class="pure-group">
-                    <label for="message">Message: </label>
+                <fieldset class="contact-field">
+                    <label for="message"><span>05.&nbsp;</span>MESSAGE</label>
                     <textarea id="message" name="message" rows="10"
                               placeholder="Your message"></textarea>
                 </fieldset>
@@ -125,16 +142,23 @@
                 </h2>
             </div>
         </form>
+
+        <br />
+    </div>
+    <div id="contact-footer">
+        <img src="../img/logo.svg" alt="ode2code-logo"></img>
+        <div id="footer-links">
+            <a class="footer-link" href="">HOME</a>
+            <a class="footer-link" href="">WHAT WE DO</a>
+            <a class="footer-link" href="">WHO WE ARE</a>
+            <a class="footer-link" href="">HOW WE WORK</a>
+        </div>
     </div>
     <!-- Submit the Form to Google Using "AJAX" -->
     <script data-cfasync="false" type="text/javascript" src="../js/form-submission-handler.js"></script>
     <!-- END -->
     <!-- Footer Section -->
-    <div id="footer">
-        <div class="container text-center">
-            <p>&copy; 2020 Ode 2 Code. Design by <a href="http://www.templatewire.com" rel="nofollow">TemplateWire</a></p>
-        </div>
-    </div>
+
     <script type="text/javascript" src="../js/jquery.1.11.1.js"></script>
     <script type="text/javascript" src="../js/bootstrap.js"></script>
     <script type="text/javascript" src="../js/SmoothScroll.js"></script>
@@ -142,5 +166,16 @@
     <script type="text/javascript" src="../js/jqBootstrapValidation.js"></script>
     <script type="text/javascript" src="../js/contact_me.js"></script>
     <script type="text/javascript" src="../js/main.js"></script>
+    <style>
+        #contact-footer {
+            background-image: url("../img/cta-footer-bg.svg"); /* The image used */
+            background-color: #cccccc; /* Used if the image is unavailable */
+            height: 500px; /* You must set a specified height */
+            background-position: top,right; /* Center the image */
+            background-repeat: no-repeat; /* Do not repeat the image */
+            background-size: cover; /* Resize the background image to cover the entire container */
+
+        }
+    </style>
 </body>
 </html>
