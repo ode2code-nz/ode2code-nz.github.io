@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="314" height="83" viewBox="0 0 314 83">
+  <g id="Logo" transform="translate(-212 -328)">
+    <text id="ode" transform="translate(245 333)" fill="#2d2d2d" font-size="48" font-family="Poppins-Light, Poppins" font-weight="300"><tspan x="0" y="50">ode</tspan></text>
+    <text id="code" transform="translate(372 333)" fill="#2d2d2d" font-size="48" font-family="Poppins-Light, Poppins" font-weight="300"><tspan x="0" y="50">code</tspan></text>
+    <text id="_2" data-name="2" transform="translate(337 328)" fill="#2774cc" font-size="59" font-family="Poppins-Medium, Poppins" font-weight="500"><tspan x="0" y="62">2</tspan></text>
+    <text id="_" data-name="}" transform="translate(495 328)" fill="#2774cc" font-size="59" font-family="Poppins-Medium, Poppins" font-weight="500"><tspan x="0" y="62">}</tspan></text>
+    <text id="_2-2" data-name="{" transform="translate(212 328)" fill="#2774cc" font-size="59" font-family="Poppins-Medium, Poppins" font-weight="500"><tspan x="0" y="62">{</tspan></text>
+  </g>
+</svg>

@@ -3,13 +3,13 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>ode2code : Home</title>
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <title>ode2code</title>
+    <meta name="description" content="NZ Software Development">
+    <meta name="author" content="ode2code">
 
     <!-- Favicons
         ================================================== -->
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
     <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
     <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
     <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
@@ -21,6 +21,9 @@
     <!-- Stylesheet
         ================================================== -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/animations.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/home.css">
     <link rel="stylesheet" type="text/css" href="css/nivo-lightbox/nivo-lightbox.css">
     <link rel="stylesheet" type="text/css" href="css/nivo-lightbox/default.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
@@ -28,12 +31,6 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500&display=swap" rel="stylesheet">
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-        <![endif]-->
 </head>
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
     <!-- Navigation
@@ -46,7 +43,7 @@
 
                 <!--Header Logo-->
                 <a style="max-width:25%" class="navbar-brand page-scroll" href="#page-top">
-                    <img src="img/final-logo.png" style="max-width:100%" alt="Logo">
+                    <img src="img/logo.svg" style="max-width: 110px" alt="Logo">
                 </a>
             </div>
 
@@ -64,166 +61,31 @@
     </nav>
     <!-- Header -->
     <header id="header">
-        <div class="intro">
-            <div class="overlay">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-8 col-md-offset-2 intro-text">
-                            <h1>ode2code</h1>
-                            <p>Providing bespoke software solutions using the Microsoft technology stack.</p>
-                            <a href="#contact" class="btn btn-custom btn-lg page-scroll">Contact Us</a>
-                        </div>
-                    </div>
+        <div id="hero-animation" class="hero-animation" style="height: 340px;">
+            <canvas id="demo-canvas" class="animation-canvas" width="1366" height="340"></canvas>
+            <div class="hero-content">
+                <h1 style="padding: 2em;">Lorem ipsum dolor sit amet, <br/>consectetur adipiscing elit.</h1>
+                <div>
+                    <button class="btn-primary">
+                        Get in touch
+                        <img src="img/arrow.svg" style="width: 22px;" alt="arrow"/>
+                    </button>
                 </div>
             </div>
         </div>
     </header>
-    <!-- About Section -->
-    <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-md-6"> <img src="img/about.jpg" class="img-responsive" alt=""> </div>
-                <div class="col-xs-12 col-md-6">
-                    <div class="about-text">
-                        <h2>About Us</h2>
-                        <p>ode2code is a software development company. We build robust and reliable software that scales. We develop, test, and deliver your projects quickly and reliably.</p>
 
-                        <div class="list-style">
-                            <div class="col-lg-6 col-sm-6 col-xs-12">
-                                <ul>
-                                    <li>Remote-first software consultancy, based in New Zealand.</li>
-                                    <li>Specialized in custom solution development and agile delivery on the Microsoft platform.</li>
-                                </ul>
-                            </div>
-                            <div class="col-lg-6 col-sm-6 col-xs-12">
-                                <ul>
-                                    <li>Helping companies deliver business-critical IT projects.</li>
-                                    <li>Automated testing.</li>
-                                    <li>CI/CD and automation.</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Services Section -->
-    <div id="services" class="text-center">
-        <div class="container">
-            <div class="section-title">
-                <h2>Our Services</h2>
-                <p>We deliver smart software solutions to business-critical challenges.</p>
-                <p>We are experts in agile software development and support you in every phase of the IT project life cycle.</p>
-            </div>
-            <div class="row">
-                <div class="col-md-4">
-                    <i class="fa fa-cogs"></i>
-                    <div class="service-desc">
-                        <h3>Design</h3>
-                        <p>Understanding your needs enables us to truly capture your business requirements in the software architecture and designs.</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <i class="fa fa-code"></i>
-                    <div class="service-desc">
-                        <h3>Build</h3>
-                        <p>Our developers can build your custom software to your specifications utilizing the .NET and Azure technology stack.</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <i class="fa fa-comments"></i>
-                    <div class="service-desc">
-                        <h3>Support</h3>
-                        <p>Our ongoing support service is provided by our software engineers to keep your custom software running smoothly.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Technologies Section -->
-    <div id="features" class="text-center">
-        <div class="container">
-            <div class="col-md-10 col-md-offset-1 section-title">
-                <h2>Our Toolbox</h2>
-                <p>We build solutions with the Microsoft stack.</p>
-            </div>
-            <div class="row">
-                <div class="col-xs-6 col-md-3">
-                    <img src="img/icon-azure.png" style="width:144px;height:144px;align-content:center;" alt="">
-                    <h3>Azure</h3>
-                </div>
-                <div class="col-xs-6 col-md-3">
-                    <img src="img/icon-net.png" style="width:144px;height:144px;align-content:center;" alt="">
-                    <h3>Microsoft .NET Core</h3>
-                </div>
-                <div class="col-xs-6 col-md-3">
-                    <img src="img/icon-microsoft-sql.png" style="width:144px;height:144px;align-content:center;" alt="">
-                    <h3>SQL Server</h3>
-                </div>
-                <div class="col-xs-6 col-md-3">
-                    <img src="img/icon-xamarin.png" style="width:144px;height:144px;align-content:center;" alt="">
-                    <h3>Xamarin</h3>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Why Section -->
-    <div id="why" class="text-center">
-        <div class="container">
-            <div class="col-md-10 col-md-offset-1 section-title">
-                <h2>Why Us?</h2>
-            </div>
-            <div class="row">
-                <div class="col-md-6">
-                    <h3>We turn business requirements into smart technical solutions.</h3>
-                    <p>
-                        We utilize our extensive project experiences to achieve your goals
-                        on time and within budget.
-                    </p>
-                </div>
-                <div class="col-md-6">
-                    <h3>We create modern solutions.</h3>
-                    <p>
-                        We rely on agile methods, tailored to your needs,
-                        to achieve results fast and effectively.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Contact Section -->
-    <div id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6"></div>
-                <div class="col-md-6">
-                    <div class="about-text">
-                        <div class="section-title">
-                            <h2>Get In Touch</h2>
-                            <p>If you think we can help you, call us for a chat or send us a brief.</p>
-                        </div>
-                        <div class="contact-item">
-                            <p style="color:white" ;><span><i class="fa fa-phone"></i> Phone</span> +64 21 954528</p>
-                        </div>
-                        <div class="contact-item">
-                            <p><span><i class="fa fa-envelope-o"></i> Email</span> michael@ode2code.co.nz</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <!-- Footer Section -->
     <div id="footer">
         <div class="container text-center">
-            <p>&copy; 2020 Ode 2 Code. Design by <a href="http://www.templatewire.com" rel="nofollow">TemplateWire</a></p>
+            <p>&copy; 2020 ode2code</p>
         </div>
     </div>
+    <script type="text/javascript" src="https://tympanus.net/Development/AnimatedHeaderBackgrounds/js/TweenLite.min.js"></script>
+    <script type="text/javascript" src="https://tympanus.net/Development/AnimatedHeaderBackgrounds/js/EasePack.min.js"></script>
+    <script type="text/javascript" src="https://tympanus.net/Development/AnimatedHeaderBackgrounds/js/rAF.js"></script>
+    <script type="text/javascript" src="js/animation.js"></script>
     <script type="text/javascript" src="js/jquery.1.11.1.js"></script>
     <script type="text/javascript" src="js/bootstrap.js"></script>
     <script type="text/javascript" src="js/SmoothScroll.js"></script>
