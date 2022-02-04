@@ -4,8 +4,10 @@
     "\\css",
     "\\fonts",
     "\\img",
-    "\\js"
+    "\\js",
+    "\\mail",
+    "\\pages"
   ],
-  "SelectedNode": "\\index.html",
+  "SelectedNode": "\\js\\form-submission-handler.js",
   "PreviewInSolutionExplorer": false
 }
