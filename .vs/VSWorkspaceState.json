@@ -1,13 +1,11 @@
 {
   "ExpandedNodes": [
     "",
-    "\\css",
     "\\fonts",
     "\\img",
-    "\\js",
     "\\mail",
     "\\pages"
   ],
-  "SelectedNode": "\\js\\form-submission-handler.js",
+  "SelectedNode": "\\img\\cta-footer-bg.svg",
   "PreviewInSolutionExplorer": false
 }
