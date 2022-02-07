@@ -1,13 +1,22 @@
 .center {
-
+    text-align: center;
+    text-align: -webkit-center;
+    text-align: -moz-center;
+    width: 100%;
 }
 
 .left {
-
+    text-align: left;
+    text-align: -webkit-left;
+    text-align: -moz-left;
+    width: 50%;
 }
 
 .right {
-
+    text-align: right;
+    text-align: -webkit-right;
+    text-align: -moz-right;
+    width: 50%;
 }
 
 .white {
@@ -30,4 +39,23 @@
     align-content: center;
     justify-content: space-evenly;
     align-items: center;
+    color: white;
+}
+
+.btn-quote {
+    color: #fff !important;
+    font-size: 13px !important;
+    font-weight: 300 !important;
+    width: 170px;
+    height: 35px;
+    margin-right: 0 !important;
+}
+
+.btn-quote::after {
+    background: none !important;
+}
+
+/*Navbar*/
+#nav {
+
 }
