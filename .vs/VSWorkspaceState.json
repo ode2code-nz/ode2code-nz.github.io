@@ -1,10 +1,12 @@
 {
   "ExpandedNodes": [
     "",
+    "\\css\\nivo-lightbox",
     "\\fonts",
     "\\img",
     "\\mail",
     "\\pages"
   ],
+  "SelectedNode": "\\.gitignore",
   "PreviewInSolutionExplorer": false
 }

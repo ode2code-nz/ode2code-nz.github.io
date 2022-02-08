@@ -83,7 +83,9 @@
                 <div class="contact-item-link"><a href="tel:64-027-348-8482">+64 027 348 8482</a></div>
             </div>
         </div>
-
+        <div class="line-container">
+            <div class="animated-line"></div>
+        </div>
         <div class="contact-form">
             <div class="contact-form-header">Book a Free Strategy Session</div>
             <form id="contact-form-body" class="gform pure-form pure-form-stacked" method="POST"
@@ -153,20 +155,20 @@
             <br />
         </div>
     </div>
-        <div id="contact-footer">
-            <div id="contact-footer-items">
-                <img id="footer-logo" src="../img/logo.svg" alt="ode2code-logo"/>
-                <div id="footer-links">
-                    <div id="footer-links-container">
-                        <a class="footer-link" href="">HOME</a>
-                        <a class="footer-link" href="">WHAT WE DO</a>
-                        <a class="footer-link" href="">WHO WE ARE</a>
-                        <a class="footer-link" href="">HOW WE WORK</a>
-                    </div>
+    <div id="contact-footer">
+        <div id="contact-footer-items">
+            <img id="footer-logo" src="../img/logo.svg" alt="ode2code-logo"/>
+            <div id="footer-links">
+                <div id="footer-links-container">
+                    <a class="footer-link" href="">HOME</a>
+                    <a class="footer-link" href="">WHAT WE DO</a>
+                    <a class="footer-link" href="">WHO WE ARE</a>
+                    <a class="footer-link" href="">HOW WE WORK</a>
                 </div>
             </div>
         </div>
-    
+    </div>
+   
     <!-- Submit the Form to Google Using "AJAX" -->
     <script data-cfasync="false" type="text/javascript" src="../js/form-submission-handler.js"></script>
     <!-- END -->
@@ -188,6 +190,63 @@
             background-repeat: no-repeat; /* Do not repeat the image */
             background-size: cover; /* Resize the background image to cover the entire container */
 
+        }
+
+        .line-container {
+            min-width: 100px;
+            height: 20px;
+
+        }
+        .animated-line {
+            height: 100%;
+            min-width: 100%;
+            background: linear-gradient(130deg, #01017a, #038aff, #2d55ff);
+            background-size: 200% 200%;
+            -webkit-animation: Animation 5s ease infinite;
+            -moz-animation: Animation 5s ease infinite;
+            animation: Animation 5s ease infinite;
+        }
+
+        @-webkit-keyframes Animation {
+            0% {
+                background-position: 10% 0%
+            }
+
+            50% {
+                background-position: 91% 100%
+            }
+
+            100% {
+                background-position: 10% 0%
+            }
+        }
+
+        @-moz-keyframes Animation {
+            0% {
+                background-position: 10% 0%
+            }
+
+            50% {
+                background-position: 91% 100%
+            }
+
+            100% {
+                background-position: 10% 0%
+            }
+        }
+
+        @keyframes Animation {
+            0% {
+                background-position: 10% 0%
+            }
+
+            50% {
+                background-position: 91% 100%
+            }
+
+            100% {
+                background-position: 10% 0%
+            }
         }
     </style>
 </body>
