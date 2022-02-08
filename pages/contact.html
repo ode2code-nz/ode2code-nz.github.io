@@ -20,10 +20,12 @@
 
     <!-- Stylesheet
         ================================================== -->
-    <link rel="stylesheet" type="text/css" href="../css/nivo-lightbox/nivo-lightbox.css">
-    <link rel="stylesheet" type="text/css" href="../css/nivo-lightbox/default.css">
+    <!--<link rel="stylesheet" type="text/css" href="../css/nivo-lightbox/nivo-lightbox.css">-->
+    <!--<link rel="stylesheet" type="text/css" href="../css/nivo-lightbox/default.css">-->
     <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
     <link rel="stylesheet" type="text/css" href="../css/contact.css">
+    <link rel="stylesheet" type="text/css" href="../css/home.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800,900" rel="stylesheet">
@@ -31,8 +33,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="contact form example">
-    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/pure-min.css" integrity="sha384-Uu6IeWbM+gzNVXJcM9XV3SohHtmWE+3VGi496jvgX1jyvDTXfdK+rfZc8C1Aehk5" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+   <!-- <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/pure-min.css" integrity="sha384-Uu6IeWbM+gzNVXJcM9XV3SohHtmWE+3VGi496jvgX1jyvDTXfdK+rfZc8C1Aehk5" crossorigin="anonymous">-->
+    <!--<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 </head>
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
@@ -63,97 +65,108 @@
              <!--/.navbar-collapse--> 
         <!--</div>
     </nav>-->
-    
-    <div id="contact-header">
-        <div id="contact-header-heading">Contact Us</div>
-        <div id="contact-header-description">Send us a brief description of your requirements so we may go<br />through them before our frist meeting.</div>
+    <div class="contact-body">
+        <div class="contact-header">
+            <div id="contact-header-heading">Contact Us</div>
+            <div id="contact-header-description">Send us a brief description of your requirements so we may go<br />through them before our frist meeting.</div>
+        </div>
+
         <div class="contact-items">
             <div class="contact-item" id="email-link">
-                <img class="contact-item-img" src="../img/email-icon.svg" alt="email-icon"/>
-                <label class="contact-item-label" id="contact-link-email"><span>01.&nbsp;</span>Name</label>
-                <a class ="contact-item-link" href="mail:michael@ode2code.co.nz" >michael@ode2code.co.nz</a>
+                <img class="contact-item-img" src="../img/email-icon.svg" alt="email-icon" />
+                <div class="contact-item-label" id="contact-link-email"><span class="contact-number">01.&nbsp;</span>Email</div>
+                <div class="contact-item-link"><a href="" mail:michael@ode2code.co.nz">michael@ode2code.co.nz</a></div>
             </div>
             <div class="contact-item" id="phone-link">
                 <img class="contact-item-img" src="../img/phone-icon.svg" alt="phone-icon" />
-                <label class="contact-item-label" id="contact-link-phone"><span>01.&nbsp;</span>Phone</label>
-                <a class ="contact-item-link" href="tel:64-027-348-8482">+64 027 348 8482</a>
+                <div class="contact-item-label" id="contact-link-phone"><span class="contact-number">02.&nbsp;</span>Phone</div>
+                <div class="contact-item-link"><a href="tel:64-027-348-8482">+64 027 348 8482</a></div>
             </div>
+        </div>
 
+        <div class="contact-form">
+            <div class="contact-form-header">Book a Free Strategy Session</div>
+            <form id="contact-form-body" class="gform pure-form pure-form-stacked" method="POST"
+                  action="https://script.google.com/macros/s/AKfycbyaJMGUom6EgI3TFWRC1SrHRfqPUSUE_mrkgx337zUOc6-gbxa5WA5ESt58fH5Iz-3E/exec">
+                <!-- change the form action to your script url -->
+
+                <div class="form-elements">
+                    <fieldset class="contact-field">
+                        <div class="form-element">
+                            <label for="name"><span class="contact-number">01.&nbsp;</span>NAME</label>
+                            <b></b>
+                            <input id="name" name="name" placeholder="Your name" pattern="^\d+\s[A-z]+\s[A-z]+,\s+[A-z]+,\s+[A-z]{2}\s+\d{5}" required />
+                        </div>
+
+                    </fieldset>
+
+
+                    <fieldset class="contact-field">
+                        <label for="email"><span class="contact-number">02.&nbsp;</span>EMAIL</label>
+                        <input id="email" name="email" type="email" value=""
+                               placeholder="Your email address" required />
+                    </fieldset>
+
+                    <fieldset class="contact-field">
+                        <label for="phone"><span class="contact-number">03.&nbsp;</span>PHONE</label>
+                        <input id="color" name="phone" placeholder="Your phone number" required />
+                    </fieldset>
+
+                    <fieldset class="contact-field">
+                        <label for="company"><span class="contact-number">04.&nbsp;</span>COMPANY</label>
+                        <input id="color" name="company" placeholder="Name of your company" required />
+                    </fieldset>
+
+                    <fieldset class="contact-field">
+                        <label for="message"><span class="contact-number">05.&nbsp;</span>MESSAGE</label>
+                        <textarea id="message" name="message" rows="10"
+                                  placeholder="Your message" required></textarea>
+                    </fieldset>
+
+                    <fieldset class="pure-group honeypot-field">
+                        <label for="honeypot">To help avoid spam, utilize a Honeypot technique with a hidden text field; must be empty to submit the form! Otherwise, we assume the user is a spam bot.</label>
+                        <input id="honeypot" type="text" name="honeypot" value="" />
+                    </fieldset>
+
+                    <button class="button-success pure-button button-xlarge">
+                        <i class="fa fa-paper-plane"></i>&nbsp;Send
+                    </button>
+                </div>
+
+                <!-- Customise the Thankyou Message People See when they submit the form: -->
+                <div style="display:none" class="thankyou_message">
+                    <!-- You can customize the thankyou message by editing the code below -->
+                    <h2>
+                        <em>Thanks</em> for contacting us! We will get back to you soon!
+                    </h2>
+                </div>
+
+                <!-- Customise the Thankyou Message People See when they submit the form: -->
+                <div style="display:none" class="thankyou_message">
+                    <!-- You can customize the thankyou message by editing the code below -->
+                    <h2>
+                        <em>Thanks</em> for contacting us! We will get back to you soon!
+                    </h2>
+                </div>
+            </form>
+
+            <br />
         </div>
     </div>
-    <div id="contact-form">
-        <div id="contact-form-header">Book a Free Strategy Session</div>
-        <form id="contact-form-body"class="gform pure-form pure-form-stacked" method="POST"
-              action="https://script.google.com/macros/s/AKfycbyaJMGUom6EgI3TFWRC1SrHRfqPUSUE_mrkgx337zUOc6-gbxa5WA5ESt58fH5Iz-3E/exec">
-            <!-- change the form action to your script url -->
-
-            <div class="form-elements">
-                <fieldset class="contact-field">
-                    <label for="name"><span>01.&nbsp;</span>NAME</label>
-                    <input id="name" name="name" placeholder="Your name" required/>
-                </fieldset>
-
-
-                <fieldset class="contact-field">
-                    <label for="email"><span>02.&nbsp;</span>EMAIL</label>
-                    <input id="email" name="email" type="email" value=""
-                           placeholder="Your email address" required/>
-                </fieldset>
-
-                <fieldset class="contact-field">
-                    <label for="phone"><span>03.&nbsp;</span>PHONE</label>
-                    <input id="color" name="phone" placeholder="Your phone number" required/>
-                </fieldset>
-
-                <fieldset class="contact-field">
-                    <label for="company"><span>04.&nbsp;</span>COMPANY</label>
-                    <input id="color" name="company" placeholder="Name of your company" required/>
-                </fieldset>
-
-                <fieldset class="contact-field">
-                    <label for="message"><span>05.&nbsp;</span>MESSAGE</label>
-                    <textarea id="message" name="message" rows="10"
-                              placeholder="Your message" required></textarea>
-                </fieldset>
-
-                <fieldset class="pure-group honeypot-field">
-                    <label for="honeypot">To help avoid spam, utilize a Honeypot technique with a hidden text field; must be empty to submit the form! Otherwise, we assume the user is a spam bot.</label>
-                    <input id="honeypot" type="text" name="honeypot" value="" />
-                </fieldset>
-
-                <button class="button-success pure-button button-xlarge">
-                    <i class="fa fa-paper-plane"></i>&nbsp;Send
-                </button>
+        <div id="contact-footer">
+            <div id="contact-footer-items">
+                <img id="footer-logo" src="../img/logo.svg" alt="ode2code-logo"/>
+                <div id="footer-links">
+                    <div id="footer-links-container">
+                        <a class="footer-link" href="">HOME</a>
+                        <a class="footer-link" href="">WHAT WE DO</a>
+                        <a class="footer-link" href="">WHO WE ARE</a>
+                        <a class="footer-link" href="">HOW WE WORK</a>
+                    </div>
+                </div>
             </div>
-
-            <!-- Customise the Thankyou Message People See when they submit the form: -->
-            <div style="display:none" class="thankyou_message">
-                <!-- You can customize the thankyou message by editing the code below -->
-                <h2>
-                    <em>Thanks</em> for contacting us! We will get back to you soon!
-                </h2>
-            </div>
-
-            <!-- Customise the Thankyou Message People See when they submit the form: -->
-            <div style="display:none" class="thankyou_message">
-                <!-- You can customize the thankyou message by editing the code below -->
-                <h2>
-                    <em>Thanks</em> for contacting us! We will get back to you soon!
-                </h2>
-            </div>
-        </form>
-
-        <br />
-    </div>
-    <div id="contact-footer">
-        <img src="../img/logo.svg" alt="ode2code-logo"></img>
-        <div id="footer-links">
-            <a class="footer-link" href="">HOME</a>
-            <a class="footer-link" href="">WHAT WE DO</a>
-            <a class="footer-link" href="">WHO WE ARE</a>
-            <a class="footer-link" href="">HOW WE WORK</a>
         </div>
-    </div>
+    
     <!-- Submit the Form to Google Using "AJAX" -->
     <script data-cfasync="false" type="text/javascript" src="../js/form-submission-handler.js"></script>
     <!-- END -->
@@ -169,7 +182,7 @@
     <style>
         #contact-footer {
             background-image: url("../img/cta-footer-bg.svg"); /* The image used */
-            background-color: #cccccc; /* Used if the image is unavailable */
+            background-color: #ffffff; /* Used if the image is unavailable */
             height: 500px; /* You must set a specified height */
             background-position: top,right; /* Center the image */
             background-repeat: no-repeat; /* Do not repeat the image */

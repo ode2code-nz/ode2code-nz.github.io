@@ -1,49 +1,149 @@
-#contact-body {
-    margin: 2em;
+.contact-body
+#footer-links{
+    margin: auto;
+    width: 80%;
+}
+.contact-header {
+    border: 1px solid black;
+    background-color:pink;
+}
+.contact-items {
+    margin-left: auto;
+    margin-right: auto;
+    width:100%;
+    /*background-color:orange;*/
+
+}
+.contact-item {
+    display: inline-block;
+    width: 40%;
+    padding:20px 20px 50px 20px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
-aside {
-    background: #1f8dd6; /* same color as selected state on site menu */
-    padding: 0.3em 1em;
-    border-radius: 3px;
-    color: #fff;
-    margin-bottom: 2em;
-}
-
-textarea {
-    width: 100%;
-}
-
-.content-head {
-    font-weight: 400;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    margin: 2em 0 1em;
-}
-
-.is-center {
-    text-align: center;
-}
-
-.button-success {
-    color: white;
-    border-radius: 4px;
-    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
-    background: rgb(28, 184, 65); /* this is a green */
-}
-
-.button-xlarge {
-    font-size: 125%;
-}
-
-button {
-    float: right;
-}
-
-#name, #email {
+.contact-item-img {
+    order: 1;
+    max-height: 60px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     width: 50%;
 }
+.contact-item-label {
+    order: 2;
+    text-align:center;
 
+}
+
+.contact-number{
+    color:blue;
+  font-weight:bold;
+}
+.contact-item-link {
+    order: 3;
+    text-align: center;
+}
+.contact-header {
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.contact-item,
+.contact-form {
+    /*border: 1px solid black !important;*/
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px 2px lightgrey !important;
+    margin: 50px 0 30px 0;
+    padding: 20px 0 30px 0;
+}
+.form-element input:invalid + b:before {
+    content: "Form is invalid";
+    color: red;
+}
+input[type="text"]:invalid~label {
+    color: red !important;
+}
+.contact-field{
+    margin:15px 0 15px 0;
+}
+#contact-header-heading,
+.contact-form-header {
+    color: blue;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.contact-form-header,
+.form-elements,
+#footer-links{
+
+    width: 80% !important;
+    margin-left: auto;
+    margin-right: auto;
+}
 .honeypot-field {
     display: none;
+}
+
+
+
+fieldset label,
+fieldset input,
+fieldset textarea{
+    width:100%;
+}
+
+fieldset input,
+fieldset textarea {
+    border-color:lightgrey;
+    border-width:0px;
+    border-radius: 3px 3px;
+    box-shadow: 2px 2px 5px 2px lightgrey !important;
+    padding:2px 15px 4px 15px;
+}
+
+.form-element {
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+input:focus,
+textarea:focus {
+    margin: 0 auto;
+    border-color: #14309c !important;
+    border-width: 1px !important;
+    box-shadow: 0 !important;
+    border-radius: 2px 15px !important;
+}
+
+#contact-footer {
+    display: table;
+    width:100%
+}
+
+#contact-footer-items {
+    display:block;
+    vertical-align: middle;
+}
+#footer-logo {
+/*    margin-left: auto;
+    margin-right: auto;*/
+
+}
+#footer-links {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#footer-links-container {
+    float: right;
+    align-content:center;
+}
+
+#footer-links a{
+    display:block;
+    color:white;
+    text-align:right;
 }
