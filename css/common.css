@@ -61,9 +61,13 @@
     background: none !important;
 }
 
-/*Navbar*/
-#nav {
-
+.page-heading {
+    background-image: url(../img/header.svg);
+    margin-top: 82px;
+    height: 420px;
+    background-position: bottom;
+    color: white;
+    padding: 5em;
 }
 
 @media (min-width: 768px) {
