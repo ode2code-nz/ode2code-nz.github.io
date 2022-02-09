@@ -165,8 +165,9 @@ fieldset textarea,
 
 
 input:focus,
-textarea:focus {
-
+input:focus-visible,
+textarea:focus,
+textarea:focus-visible {
     border-color: #4BAEDA !important;
     border-width: 1px !important;
     box-shadow: 0 !important;
