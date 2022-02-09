@@ -20,12 +20,11 @@
 
     <!-- Stylesheet
         ================================================== -->
-    <!--<link rel="stylesheet" type="text/css" href="../css/nivo-lightbox/nivo-lightbox.css">-->
-    <!--<link rel="stylesheet" type="text/css" href="../css/nivo-lightbox/default.css">-->
+    <link rel="stylesheet" type="text/css" href="../css/nivo-lightbox/nivo-lightbox.css">
+    <link rel="stylesheet" type="text/css" href="../css/nivo-lightbox/default.css">
     <link rel="stylesheet" type="text/css" href="../css/style.css">
     <link rel="stylesheet" type="text/css" href="../css/common.css">
     <link rel="stylesheet" type="text/css" href="../css/contact.css">
-    <link rel="stylesheet" type="text/css" href="../css/home.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800,900" rel="stylesheet">
@@ -33,17 +32,17 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="contact form example">
-   <!-- <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/pure-min.css" integrity="sha384-Uu6IeWbM+gzNVXJcM9XV3SohHtmWE+3VGi496jvgX1jyvDTXfdK+rfZc8C1Aehk5" crossorigin="anonymous">-->
+    <!-- <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/pure-min.css" integrity="sha384-Uu6IeWbM+gzNVXJcM9XV3SohHtmWE+3VGi496jvgX1jyvDTXfdK+rfZc8C1Aehk5" crossorigin="anonymous">-->
     <!--<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 </head>
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
-     <!--Navigation
-        ==========================================
-   <-->
+    <!--Navigation
+         ==========================================
+    <-->
     <!--<nav id="menu" class="navbar navbar-default navbar-fixed-top">
         <div class="container">
-             Brand and toggle get grouped for better mobile display 
+             Brand and toggle get grouped for better mobile display
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
 
@@ -53,7 +52,7 @@
                 </a>
             </div>
 
-             Header Section Buttons 
+             Header Section Buttons
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="#about" class="page-scroll">About</a></li>
@@ -62,26 +61,35 @@
                     <li><a href="contact.html" class="page-scroll">Contact</a></li>
                 </ul>
             </div>-->
-             <!--/.navbar-collapse--> 
-        <!--</div>
+    <!--/.navbar-collapse-->
+    <!--</div>
     </nav>-->
     <div class="contact-body">
         <div class="contact-header">
             <div id="contact-header-heading">Contact Us</div>
+            <br />
             <div id="contact-header-description">Send us a brief description of your requirements so we may go<br />through them before our frist meeting.</div>
         </div>
 
         <div class="contact-items">
             <div class="contact-item" id="email-link">
                 <img class="contact-item-img" src="../img/email-icon.svg" alt="email-icon" />
-                <div class="contact-item-label" id="contact-link-email"><span class="contact-number">01.&nbsp;</span>Email</div>
+                <br />
+                <div class="contact-item-label" id="contact-link-email"><span class="contact-number">01.&nbsp;</span>EMAIL</div>
+                <br />
                 <div class="contact-item-link"><a href="" mail:michael@ode2code.co.nz">michael@ode2code.co.nz</a></div>
+                <br />
             </div>
+
             <div class="contact-item" id="phone-link">
                 <img class="contact-item-img" src="../img/phone-icon.svg" alt="phone-icon" />
-                <div class="contact-item-label" id="contact-link-phone"><span class="contact-number">02.&nbsp;</span>Phone</div>
+                <br />
+                <div class="contact-item-label" id="contact-link-phone"><span class="contact-number">02.&nbsp;</span>PHONE</div>
+                <br />
                 <div class="contact-item-link"><a href="tel:64-027-348-8482">+64 027 348 8482</a></div>
+                <br />
             </div>
+
         </div>
         <div class="line-container">
             <div class="animated-line"></div>
@@ -94,43 +102,48 @@
 
                 <div class="form-elements">
                     <fieldset class="contact-field">
-                        <div class="form-element">
-                            <label for="name"><span class="contact-number">01.&nbsp;</span>NAME</label>
-                            <b></b>
-                            <input id="name" name="name" placeholder="Your name" pattern="^\d+\s[A-z]+\s[A-z]+,\s+[A-z]+,\s+[A-z]{2}\s+\d{5}" required />
-                        </div>
+                        <input class="contact-input" id="name" name="name" placeholder="Your name" pattern="\d*+" required />
+                        <label class="contact-input-label" for="name"><span class="contact-input-number">01.&nbsp;</span>NAME</label>
 
                     </fieldset>
+                    <br />
 
 
                     <fieldset class="contact-field">
-                        <label for="email"><span class="contact-number">02.&nbsp;</span>EMAIL</label>
-                        <input id="email" name="email" type="email" value=""
+                        <input class="contact-input" id="email" name="email" type="email" value=""
                                placeholder="Your email address" required />
-                    </fieldset>
+                        <label class="contact-input-label" for="email">
+                            <span class="contact-input-number">02.&nbsp;</span>EMAIL
+                        </label>
 
-                    <fieldset class="contact-field">
-                        <label for="phone"><span class="contact-number">03.&nbsp;</span>PHONE</label>
-                        <input id="color" name="phone" placeholder="Your phone number" required />
-                    </fieldset>
 
-                    <fieldset class="contact-field">
-                        <label for="company"><span class="contact-number">04.&nbsp;</span>COMPANY</label>
-                        <input id="color" name="company" placeholder="Name of your company" required />
                     </fieldset>
-
+                    <br />
                     <fieldset class="contact-field">
-                        <label for="message"><span class="contact-number">05.&nbsp;</span>MESSAGE</label>
-                        <textarea id="message" name="message" rows="10"
+                        <input class="contact-input" id="phone" name="phone" placeholder="Your phone number" required />
+
+                        <label class="contact-input-label" for="phone"><span class="contact-input-number">03.&nbsp;</span>PHONE</label>
+                    </fieldset>
+                    <br />
+                    <fieldset class="contact-field">
+                        <input class="contact-input" id="company" name="company" placeholder="Name of your company" required />
+
+                        <label class="contact-input-label" for="company"><span class="contact-input-number">04.&nbsp;</span>COMPANY</label>
+                    </fieldset>
+                    <br />
+                    <fieldset class="contact-field">
+                        <textarea class="contact-textarea" id="message" name="message" rows="10"
                                   placeholder="Your message" required></textarea>
-                    </fieldset>
+                        <label class="contact-input-label" for="message"><span class="contact-input-number">05.&nbsp;</span>MESSAGE</label>
 
+                    </fieldset>
+                    <br />
                     <fieldset class="pure-group honeypot-field">
                         <label for="honeypot">To help avoid spam, utilize a Honeypot technique with a hidden text field; must be empty to submit the form! Otherwise, we assume the user is a spam bot.</label>
                         <input id="honeypot" type="text" name="honeypot" value="" />
                     </fieldset>
 
-                    <button class="button-success pure-button button-xlarge">
+                    <button class="button-success pure-button button-xlarge" id="contact-submit-button">
                         <i class="fa fa-paper-plane"></i>&nbsp;Send
                     </button>
                 </div>
@@ -157,7 +170,7 @@
     </div>
     <div id="contact-footer">
         <div id="contact-footer-items">
-            <img id="footer-logo" src="../img/logo.svg" alt="ode2code-logo"/>
+            <img id="footer-logo" src="../img/logo.svg" alt="ode2code-logo" />
             <div id="footer-links">
                 <div id="footer-links-container">
                     <a class="footer-link" href="">HOME</a>
@@ -168,7 +181,7 @@
             </div>
         </div>
     </div>
-   
+
     <!-- Submit the Form to Google Using "AJAX" -->
     <script data-cfasync="false" type="text/javascript" src="../js/form-submission-handler.js"></script>
     <!-- END -->
@@ -181,73 +194,5 @@
     <script type="text/javascript" src="../js/jqBootstrapValidation.js"></script>
     <script type="text/javascript" src="../js/contact_me.js"></script>
     <script type="text/javascript" src="../js/main.js"></script>
-    <style>
-        #contact-footer {
-            background-image: url("../img/cta-footer-bg.svg"); /* The image used */
-            background-color: #ffffff; /* Used if the image is unavailable */
-            height: 500px; /* You must set a specified height */
-            background-position: top,right; /* Center the image */
-            background-repeat: no-repeat; /* Do not repeat the image */
-            background-size: cover; /* Resize the background image to cover the entire container */
-
-        }
-
-        .line-container {
-            min-width: 100px;
-            height: 20px;
-
-        }
-        .animated-line {
-            height: 100%;
-            min-width: 100%;
-            background: linear-gradient(130deg, #01017a, #038aff, #2d55ff);
-            background-size: 200% 200%;
-            -webkit-animation: Animation 5s ease infinite;
-            -moz-animation: Animation 5s ease infinite;
-            animation: Animation 5s ease infinite;
-        }
-
-        @-webkit-keyframes Animation {
-            0% {
-                background-position: 10% 0%
-            }
-
-            50% {
-                background-position: 91% 100%
-            }
-
-            100% {
-                background-position: 10% 0%
-            }
-        }
-
-        @-moz-keyframes Animation {
-            0% {
-                background-position: 10% 0%
-            }
-
-            50% {
-                background-position: 91% 100%
-            }
-
-            100% {
-                background-position: 10% 0%
-            }
-        }
-
-        @keyframes Animation {
-            0% {
-                background-position: 10% 0%
-            }
-
-            50% {
-                background-position: 91% 100%
-            }
-
-            100% {
-                background-position: 10% 0%
-            }
-        }
-    </style>
 </body>
 </html>

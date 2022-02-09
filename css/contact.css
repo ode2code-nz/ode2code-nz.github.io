@@ -1,26 +1,54 @@
+.body{
+    display:block;
+}
+
 .contact-body,
 .line-container
 #footer-links{
     margin: auto;
-    width: 80%;
+    width: 65%;
+    max-width:750px;
 }
 .contact-header {
-    border: 1px solid black;
-    background-color:pink;
-}
-.contact-items {
-    margin-left: auto;
-    margin-right: auto;
-    width:100%;
-    /*background-color:orange;*/
 
 }
+
+.contact-form-header,
+.form-elements,
+#footer-links {
+    width: 65% !important;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Contract Cards*/
+.contact-items {
+    display: block;
+    margin-bottom: 50px;
+    overflow-clip-margin: 5px;
+    padding-bottom: 10px;
+}
+
 .contact-item {
-    display: inline-block;
-    width: 40%;
-    padding:20px 20px 50px 20px;
+    display:inline-block;
+    width:400px;
+    max-width: 47%;
+    padding: 20px 20px 50px 20px;
     margin-left: 20px;
     margin-right: 20px;
+    text-align:center;
+   
+}
+
+#email-link {
+    margin-left: 0 !important;
+    /*margin-right: auto;*/
+}
+
+#phone-link {
+    margin-left:auto;
+    margin-right: 0 !important;
+    float:right;
 }
 
 .contact-item-img {
@@ -37,10 +65,15 @@
 
 }
 
-.contact-number{
-    color:blue;
-  font-weight:bold;
+/*Contact Form*/
+.contact-item *,
+fieldset label
+{
+    color: #818181;
+    font-weight: bold;
 }
+
+
 .contact-item-link {
     order: 3;
     text-align: center;
@@ -48,6 +81,27 @@
 .contact-header {
     margin-top: 100px;
     margin-bottom: 50px;
+}
+
+.contact-item-link a,
+.contact-number,
+.contact-input-number {
+    color: #289FD3;
+}
+
+
+/*
+    A + B
+    Select element B whose previous element is A
+*/
+.contact-input:not(:placeholder-shown) + .contact-input-label .contact-input-number,
+.contact-textarea:not(:placeholder-shown) + .contact-input-label .contact-input-number {
+    color: #FBBE2F;
+}
+
+#contact-header-description {
+    color: #4D7A9D;
+    font-weight:600;
 }
 
 .contact-item,
@@ -58,70 +112,96 @@
     margin: 50px 0 30px 0;
     padding: 20px 0 30px 0;
 }
-.form-element input:invalid + b:before {
-    content: "Form is invalid";
-    color: red;
-}
-input[type="text"]:invalid~label {
-    color: red !important;
-}
-.contact-field{
-    margin:15px 0 15px 0;
-}
+
 #contact-header-heading,
 .contact-form-header {
-    color: blue;
+    color: #134E7D;
     font-size: 30px;
     font-weight: bold;
 }
 
-.contact-form-header,
-.form-elements,
-#footer-links{
 
-    width: 80% !important;
-    margin-left: auto;
-    margin-right: auto;
+
+.contact-field {
+    display: flex;
+    flex-direction: column-reverse;
+    min-width: 100%;
 }
-.honeypot-field {
-    display: none;
-}
-
-
 
 fieldset label,
 fieldset input,
 fieldset textarea{
     width:100%;
+    min-width:100%;
 }
 
-fieldset input,
+fieldset input {
+    color: #046096;
+    font-weight: 600;
+}
+fieldset input::placeholder {
+    color: #046096;
+    font-weight: 500;
+}
+
 fieldset textarea {
-    border-color:lightgrey;
-    border-width:0px;
+    color: #046096;
+    font-weight: 500;
+}
+fieldset input,
+fieldset textarea,
+#contact-submit-button {
+    border-color: lightgrey;
+    border-width: 0px;
     border-radius: 3px 3px;
     box-shadow: 2px 2px 5px 2px lightgrey !important;
-    padding:2px 15px 4px 15px;
+    padding: 2px 15px 4px 15px;
 }
 
-.form-element {
-    width: 100%;
-    margin: 0 auto;
+
+.honeypot-field {
+    display: none;
 }
 
 
 input:focus,
 textarea:focus {
-    margin: 0 auto;
-    border-color: #14309c !important;
+
+    border-color: #4BAEDA !important;
     border-width: 1px !important;
     box-shadow: 0 !important;
     border-radius: 2px 15px !important;
 }
 
+
+
+#contact-submit-button {
+    background-color: #134E7D;
+    border-radius: 5px;
+    color: white;
+}
+
+    #contact-submit-button:hover {
+        background-color: white;
+        color: #134E7D;
+    }
+
+    #contact-submit-button:active {
+        background-color: #289FD3;
+        color: white;
+    }
+
+/**Footer*/
+
 #contact-footer {
     display: table;
-    width:100%
+    width: 100%; 
+    background-image: url("../img/cta-footer-bg.svg"); /* The image used */
+    background-color: #ffffff; /* Used if the image is unavailable */
+    height: 300px; /* You must set a specified height */
+    background-position: top,right; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
 }
 
 #contact-footer-items {
@@ -129,14 +209,13 @@ textarea:focus {
     vertical-align: middle;
 }
 #footer-logo {
-/*    margin-left: auto;
-    margin-right: auto;*/
+    margin-left: 50px;
+}
+#footer-links{
+    position:center;
+    max-width:750px;
+}
 
-}
-#footer-links {
-    margin-left: auto;
-    margin-right: auto;
-}
 
 #footer-links-container {
     float: right;
@@ -144,7 +223,69 @@ textarea:focus {
 }
 
 #footer-links a{
+    padding: 5px 0 5px 5px;
     display:block;
     color:white;
     text-align:right;
 }
+
+
+/*Animated Line*/
+.line-container {
+    min-width: 100px;
+    height: 5px;
+}
+
+.animated-line {
+    height: 100%;
+    min-width: 100%;
+    background: linear-gradient(130deg, #01017a, #038aff, #2d55ff);
+    background-size: 200% 200%;
+    -webkit-animation: Animation 5s ease infinite;
+    -moz-animation: Animation 5s ease infinite;
+    animation: Animation 5s ease infinite;
+}
+
+@-webkit-keyframes Animation {
+    0% {
+        background-position: 10% 0%
+    }
+
+    50% {
+        background-position: 91% 100%
+    }
+
+    100% {
+        background-position: 10% 0%
+    }
+}
+
+@-moz-keyframes Animation {
+    0% {
+        background-position: 10% 0%
+    }
+
+    50% {
+        background-position: 91% 100%
+    }
+
+    100% {
+        background-position: 10% 0%
+    }
+}
+
+@keyframes Animation {
+    0% {
+        background-position: 10% 0%
+    }
+
+    50% {
+        background-position: 91% 100%
+    }
+
+    100% {
+        background-position: 10% 0%
+    }
+}
+
+
