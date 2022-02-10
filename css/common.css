@@ -1,3 +1,9 @@
+:root {
+    --primary-color: #072450;
+    --secondary-color: #0298d7;
+}
+
+
 .center {
     text-align: center;
     text-align: -webkit-center;
@@ -24,7 +30,7 @@
 }
 
 .btn-primary {
-    background: -webkit-linear-gradient(to right, #072450, #0298d7);
+    background: -webkit-linear-gradient(to right, var(--primary-color), var(--secondary-color));
     background: -o-linear-gradient(to right, #072450, #0298d7);
     background: -moz-linear-gradient(to right, #072450, #0298d7);
     background: linear-gradient(to right, #072450, #0298d7);
@@ -55,7 +61,26 @@
     background: none !important;
 }
 
-/*Navbar*/
-#nav {
+.page-heading {
+    background-image: url(../img/header.svg);
+    margin-top: 82px;
+    height: 420px;
+    background-position: bottom;
+    color: white;
+    padding: 5em;
+}
 
+@media (min-width: 768px) {
+    .navbar-nav li a {
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+    }
+
+    .navbar-right {
+        display: flex;
+        float: right !important;
+        margin-right: -15px;
+        align-items: center;
+        min-height: 50px;
+    }
 }
