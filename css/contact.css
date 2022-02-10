@@ -9,8 +9,9 @@
     width: 65%;
     max-width:750px;
 }
-.contact-header {
-
+.contact-body {
+    display: flex;
+    flex-direction: column;
 }
 
 .contact-form-header,
@@ -21,10 +22,10 @@
     margin-right: auto;
 }
 
-/*Contract Cards*/
+/*Contact Cards*/
 .contact-items {
     display: block;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     overflow-clip-margin: 5px;
     padding-bottom: 10px;
 }
@@ -39,6 +40,7 @@
     text-align:center;
    
 }
+
 
 #email-link {
     margin-left: 0 !important;
@@ -104,21 +106,27 @@ fieldset label
     font-weight:600;
 }
 
-.contact-item,
-.contact-form {
+.contact-item
+{
     /*border: 1px solid black !important;*/
     border-radius: 5px;
     box-shadow: 2px 2px 4px 2px lightgrey !important;
-    margin: 50px 0 30px 0;
+    margin: 10px 0 10px 0;
+    padding: 20px 0 20px 0;
+}
+.contact-form {
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px 2px lightgrey !important;
+    margin: 35px 0 30px 0;
     padding: 20px 0 30px 0;
 }
 
-#contact-header-heading,
-.contact-form-header {
-    color: #134E7D;
-    font-size: 30px;
-    font-weight: bold;
-}
+    #contact-header-heading,
+    .contact-form-header {
+        color: #134E7D;
+        font-size: 30px;
+        font-weight: bold;
+    }
 
 
 
@@ -139,10 +147,11 @@ fieldset input {
     color: #046096;
     font-weight: 600;
 }
-fieldset input::placeholder {
-    color: #046096;
-    font-weight: 500;
-}
+    fieldset input::placeholder,
+    fieldset textarea::placeholder {
+        color: #046096;
+        font-weight: 500;
+    }
 
 fieldset textarea {
     color: #046096;
@@ -233,6 +242,8 @@ textarea:focus-visible {
 
 /*Animated Line*/
 .line-container {
+    margin-left:-50vw;
+    width:100vw;
     min-width: 100px;
     height: 5px;
 }
@@ -288,5 +299,58 @@ textarea:focus-visible {
         background-position: 10% 0%
     }
 }
+@media(max-width:767px) {
 
+    .contact-body {
+        width: 90%;
+    }
+    .contact-header,
+    .contact-form-header {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .contact-item {
+        min-width: 100%;
+        color: red !important;
+        border-width: 5px !important;
+    }
+    #contact-header-heading,
+    .contact-form-header {
+        font-size: 20px !important;
+    }
+    #contact-header-description-break{
+        display:none;
+    }
+
+    .line-container {
+        margin-left: -10vw;
+        width: 110vw;
+        min-width: 100px;
+        height: 6px;
+    }
+    .contact-form-header,
+    .form-elements,
+    #footer-links {
+        width: 90% !important;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    input::placeholder,
+    textarea::placeholder{
+        font-size:14px;
+    }
+    
+    .footer-link{
+        font-size:12px;
+    }
+
+    #footer-logo{
+        margin-left:2%;
+        min-width:120px;
+        max-width:300px;
+        width:40%;
+    }
+}
 
