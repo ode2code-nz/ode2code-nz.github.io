@@ -6,8 +6,8 @@
 .line-container
 #footer-links{
     margin: auto;
-    width: 65%;
-    max-width:750px;
+    width: 75%;
+    max-width:1000px;
 }
 .contact-body {
     display: flex;
@@ -17,7 +17,7 @@
 .contact-form-header,
 .form-elements,
 #footer-links {
-    width: 65% !important;
+    width: 75% !important;
     margin-left: auto;
     margin-right: auto;
 }
@@ -32,8 +32,8 @@
 
 .contact-item {
     display:inline-block;
-    width:400px;
-    max-width: 47%;
+    width:500px;
+    max-width: 48%;
     padding: 20px 20px 50px 20px;
     margin-left: 20px;
     margin-right: 20px;
@@ -81,8 +81,8 @@ fieldset label
     text-align: center;
 }
 .contact-header {
-    margin-top: 100px;
-    margin-bottom: 50px;
+  /* */ margin-top: 100px;
+    margin-bottom: 20px;
 }
 
 .contact-item-link a,
@@ -223,7 +223,7 @@ textarea:focus-visible {
 }
 #footer-links{
     position:center;
-    max-width:750px;
+    max-width:1000px;
 }
 
 
@@ -319,8 +319,12 @@ textarea:focus-visible {
     .contact-form-header {
         font-size: 20px !important;
     }
-    #contact-header-description-break{
-        display:none;
+
+ /*   .contact-form-header{
+        text-align:center;
+    }*/
+    #contact-header-description-break {
+        display: none;
     }
 
     .line-container {
