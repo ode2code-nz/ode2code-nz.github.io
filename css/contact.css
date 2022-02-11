@@ -7,7 +7,7 @@
 #footer-links{
     margin: auto;
     width: 75%;
-    max-width:1000px;
+    max-width:850px;
 }
 .contact-body {
     display: flex;
@@ -205,13 +205,15 @@ textarea:focus-visible {
 
 #contact-footer {
     display: table;
-    width: 100%; 
+    width: 100%;
     background-image: url("../img/cta-footer-bg.svg"); /* The image used */
     background-color: #ffffff; /* Used if the image is unavailable */
     height: 300px; /* You must set a specified height */
     background-position: top,right; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover; /* Resize the background image to cover the entire container */
+    display: flex;
+    flex-direction: column;
 }
 
 #contact-footer-items {
@@ -223,13 +225,15 @@ textarea:focus-visible {
 }
 #footer-links{
     position:center;
-    max-width:1000px;
+    max-width:850px;
+    padding-bottom:20px;
+    padding-top:50px;
+    color:red
 }
 
 
 #footer-links-container {
     float: right;
-    align-content:center;
 }
 
 #footer-links a{
