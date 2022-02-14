@@ -4,6 +4,11 @@
     --box-shadow: #EAF0FD;
 }
 
+.same-line-bold {
+    font-size: 14px;
+    font-weight: 800;
+    color: var(--secondary-color);
+}
 
 .center {
     text-align: center;
@@ -85,3 +90,5 @@
         min-height: 50px;
     }
 }
+
+
