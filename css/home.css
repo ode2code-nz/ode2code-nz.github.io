@@ -24,3 +24,12 @@
     max-width: 1300px;
 }
 
+
+@media (max-width: 1100px) {
+    .two-columns { padding: 1em;}
+
+    .left {
+        width: auto;
+    }
+    .right { width: auto;}
+}
