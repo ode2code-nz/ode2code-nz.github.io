@@ -70,7 +70,7 @@ ul, ol {
     list-style-image: url('../img/bullet.png');
 }
 
-li {
+.bullet {
     margin: 15px 0;
 }
 
@@ -115,12 +115,14 @@ hr {
 	color: #6372ff;
 }
 
+.nav {
+    padding: 0 !important;
+}
+
 .nav li a {
 	padding-right: 0;
     margin-right: 25px;
 }
-
-
 
 #menu.navbar-default .navbar-nav > li > a {
 	font-family: 'Poppins', sans-serif;
