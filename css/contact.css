@@ -27,7 +27,8 @@
     display: block;
     margin-bottom: 20px;
     overflow-clip-margin: 5px;
-    padding-bottom: 10px;
+    padding: 2em 0;
+
 }
 
 .contact-item {
@@ -83,6 +84,7 @@ fieldset label
 .contact-header {
   /* */ margin-top: 100px;
     margin-bottom: 20px;
+    padding: 5em 0;
 }
 
 .contact-item-link a,
@@ -103,22 +105,20 @@ fieldset label
 
 #contact-header-description {
     color: #4D7A9D;
-    font-weight:600;
+    font-weight:400;
 }
 
-.contact-item
-{
-    /*border: 1px solid black !important;*/
+.contact-item {
     border-radius: 5px;
-    box-shadow: 2px 2px 4px 2px lightgrey !important;
+    box-shadow: 2px 2px 4px 2px var(--box-shadow) !important;
     margin: 10px 0 10px 0;
     padding: 20px 0 20px 0;
 }
 .contact-form {
     border-radius: 5px;
-    box-shadow: 2px 2px 4px 2px lightgrey !important;
-    margin: 35px 0 30px 0;
-    padding: 20px 0 30px 0;
+    box-shadow: 2px 2px 4px 2px var(--box-shadow) !important;
+    padding: 35px 0 30px 0;
+    margin: 2em 0 12em 0;
 }
 
     #contact-header-heading,
@@ -163,7 +163,7 @@ fieldset textarea,
     border-color: lightgrey;
     border-width: 0px;
     border-radius: 3px 3px;
-    box-shadow: 2px 2px 5px 2px lightgrey !important;
+    box-shadow: 2px 2px 4px 2px var(--box-shadow) !important;
     padding: 2px 15px 4px 15px;
 }
 
@@ -179,7 +179,7 @@ textarea:focus,
 textarea:focus-visible {
     border-color: #4BAEDA !important;
     border-width: 1px !important;
-    box-shadow: 0 !important;
+    box-shadow: none !important;
     border-radius: 2px 15px !important;
 }
 
@@ -204,24 +204,25 @@ textarea:focus-visible {
 /**Footer*/
 
 #contact-footer {
-    display: table;
     width: 100%;
-    background-image: url("../img/cta-footer-bg.svg"); /* The image used */
-    background-color: #ffffff; /* Used if the image is unavailable */
-    height: 300px; /* You must set a specified height */
-    background-position: top,right; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover; /* Resize the background image to cover the entire container */
     display: flex;
     flex-direction: column;
+    background-image: url(../img/cta-footer-bg.svg);
+    min-height: 600px;
+    background-size: cover;
+    background-repeat: no-repeat;
+
 }
 
 #contact-footer-items {
-    display:block;
+    display: block;
     vertical-align: middle;
+    margin-top: 1em;
 }
 #footer-logo {
-    margin-left: 50px;
+    margin-left: 90px;
+    max-width: 237px;
+    padding: 14px 0;
 }
 #footer-links{
     position:center;
@@ -234,6 +235,7 @@ textarea:focus-visible {
 
 #footer-links-container {
     float: right;
+    margin-top: 12em;
 }
 
 #footer-links a{
