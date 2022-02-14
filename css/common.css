@@ -102,59 +102,6 @@
     padding: 5em;
 }
 
-/*Animated Line*/
-.animated-line {
-    height: 100%;
-    min-width: 100%;
-    background: linear-gradient(130deg, #01017a, #038aff, #2d55ff);
-    background-size: 200% 200%;
-    -webkit-animation: Animation 5s ease infinite;
-    -moz-animation: Animation 5s ease infinite;
-    animation: Animation 5s ease infinite;
-}
-
-@-webkit-keyframes Animation {
-    0% {
-        background-position: 10% 0%
-    }
-
-    50% {
-        background-position: 91% 100%
-    }
-
-    100% {
-        background-position: 10% 0%
-    }
-}
-
-@-moz-keyframes Animation {
-    0% {
-        background-position: 10% 0%
-    }
-
-    50% {
-        background-position: 91% 100%
-    }
-
-    100% {
-        background-position: 10% 0%
-    }
-}
-
-@keyframes Animation {
-    0% {
-        background-position: 10% 0%
-    }
-
-    50% {
-        background-position: 91% 100%
-    }
-
-    100% {
-        background-position: 10% 0%
-    }
-}
-
 @media (min-width: 768px) {
     .navbar-nav li a {
         padding-top: 0 !important;

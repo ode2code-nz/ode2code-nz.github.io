@@ -17,21 +17,3 @@
     width:65%;
 }
 
-
-/*Animated line*/
-.line-container {
-    position:absolute;
-    width: 65vw;
-    min-width: 100px;
-    height: 5px;
-}
-
-.line-left {
-
-    left:0;
-}
-
-.line-right {
-    right:0;
-}
-
