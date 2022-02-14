@@ -1,3 +1,37 @@
 .nz {
-    /*background-image: url(../img/)*/
+    background-image: url(../img/NZ-space.jpg);
+    background-color: #ffffff; /* Used if the image is unavailable */
+    height:800px;
+    max-width:100vw;
+    max-height:50vw;
+    background-position: right; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+
+ 
 }
+
+.who-we-are-element{
+    padding:20px 0 20px 0;
+    margin:auto;
+    width:65%;
+}
+
+
+/*Animated line*/
+.line-container {
+    position:absolute;
+    width: 65vw;
+    min-width: 100px;
+    height: 5px;
+}
+
+.line-left {
+
+    left:0;
+}
+
+.line-right {
+    right:0;
+}
+
