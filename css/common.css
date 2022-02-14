@@ -1,8 +1,14 @@
 :root {
     --primary-color: #072450;
     --secondary-color: #0298d7;
+    --box-shadow: #EAF0FD;
 }
 
+.same-line-bold {
+    font-size: 14px;
+    font-weight: 800;
+    color: var(--secondary-color);
+}
 
 .center {
     text-align: center;
@@ -63,6 +69,8 @@
 
 .page-heading {
     background-image: url(../img/header.svg);
+    background-size: cover;
+
     margin-top: 82px;
     height: 420px;
     background-position: bottom;
@@ -137,3 +145,5 @@
         min-height: 50px;
     }
 }
+
+

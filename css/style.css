@@ -5,10 +5,10 @@ img-logo {
 }
 
 body, html {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Poppins', sans-serif;
 	text-rendering: optimizeLegibility !important;
 	-webkit-font-smoothing: antialiased !important;
-	color: #777;
+	color: #383838;
 	font-weight: 400;
 	width: 100% !important;
 	height: 100% !important;
@@ -31,15 +31,17 @@ h2 {
     color: #134E7D;
     line-height: 1.5;
 }
+
+/*Subheading*/
 h3 {
-	font-size: 20px;
-	font-weight: 600;
-	color: #333;
+    font-size: 18px;
+    font-weight: 600;
+	color: var(--secondary-color);
 }
 h4 {
-	font-size: 18px;
-	color: #333;
-	font-weight: 600;
+    font-size: 14px;
+    font-weight: 800;
+    color: var(--secondary-color);
 }
 h5 {
 	text-transform: uppercase;
@@ -47,7 +49,7 @@ h5 {
 	line-height: 20px;
 }
 p {
-	font-size: 15px;
+	font-size: 14px;
 }
 p.intro {
 	margin: 12px 0 0;
@@ -63,10 +65,15 @@ a:hover, a:focus {
 }
 ul, ol {
 	list-style: none;
+	margin-left: 20px;
+	padding: 1em 0;
+    list-style-image: url('../img/bullet.png');
 }
-ul, ol {
-	padding: 0;
+
+.bullet {
+    margin: 15px 0;
 }
+
 hr {
 	height: 2px;
 	width: 70px;
@@ -108,12 +115,14 @@ hr {
 	color: #6372ff;
 }
 
+.nav {
+    padding: 0 !important;
+}
+
 .nav li a {
 	padding-right: 0;
     margin-right: 25px;
 }
-
-
 
 #menu.navbar-default .navbar-nav > li > a {
 	font-family: 'Poppins', sans-serif;

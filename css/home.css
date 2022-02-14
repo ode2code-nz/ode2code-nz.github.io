@@ -13,14 +13,14 @@
 
 
 
-    #home .two-columns {
-        padding: 10em 25em;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        align-items: center;
-        align-content: center;
-        flex-wrap: wrap;
-        max-width: 1300px;
-    }
+.two-columns {
+    padding: 10em 4em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    max-width: 1300px;
+}
 
