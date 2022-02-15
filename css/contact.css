@@ -275,12 +275,6 @@ textarea:focus-visible {
         display: none;
     }
 
-    .line-container {
-        margin-left: -10vw;
-        width: 110vw;
-        min-width: 100px;
-        height: 6px;
-    }
     .contact-form-header,
     .form-elements,
     #footer-links {

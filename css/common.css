@@ -103,6 +103,24 @@
 }
 
 /*Animated Line*/
+
+.line-container {
+    position: absolute;
+    width: 65vw;
+    min-width: 100px;
+    height: 8px;
+}
+.line-left {
+    left: 0;
+}
+
+.line-right {
+    right: 0;
+}
+
+.line-center {
+    left: 50px;
+}
 .animated-line {
     height: 100%;
     min-width: 100%;
