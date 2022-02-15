@@ -208,10 +208,10 @@ textarea:focus-visible {
     display: flex;
     flex-direction: column;
     background-image: url(../img/cta-footer-bg.svg);
-    min-height: 600px;
+    min-height: 420px;
     background-size: cover;
     background-repeat: no-repeat;
-
+    justify-content: space-between;
 }
 
 #contact-footer-items {
@@ -219,31 +219,7 @@ textarea:focus-visible {
     vertical-align: middle;
     margin-top: 1em;
 }
-#footer-logo {
-    margin-left: 90px;
-    max-width: 237px;
-    padding: 14px 0;
-}
-#footer-links{
-    position:center;
-    max-width:850px;
-    padding-bottom:20px;
-    padding-top:50px;
-    color:red
-}
 
-
-#footer-links-container {
-    float: right;
-    margin-top: 12em;
-}
-
-#footer-links a{
-    padding: 5px 0 5px 5px;
-    display:block;
-    color:white;
-    text-align:right;
-}
 
 
 
