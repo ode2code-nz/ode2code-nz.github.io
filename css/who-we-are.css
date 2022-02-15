@@ -21,7 +21,7 @@
 }
 
 #banner-text{
-
+team
     font-size:calc(4px + .9vw);
     padding-left:5em;
     padding-top:15%;
@@ -87,10 +87,12 @@
 }
 /*Team Cards*/
 .team-cards {
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
 }
 .team-card {
-    display: inline-block !important;
     width: 380px;
     min-width: 250px;
     max-width: 380px;
@@ -100,6 +102,7 @@
     perspective: 1000px;
     padding: 2em;
     background-color: transparent;
+
 }
 .team-card-inner {
     /*display: inline-block !important;*/
@@ -249,8 +252,9 @@
     }
 
     .team-card {
+        float:left;/*
         display: flex !important;
         width: 600px !important;
-        min-width: 80% !important;
+        min-width: 80% !important;*/
     }
 }
