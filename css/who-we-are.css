@@ -1,3 +1,6 @@
+
+
+
 .nz {
     background-image: url(../img/NZ-space.jpg);
     background-color: #ffffff; /* Used if the image is unavailable */
@@ -25,11 +28,25 @@
     text-align:right;
     width:40%
 }
-#who-we-are-element {
+.who-we-are-element {
+    text-align: left;
+}
+#our-passion-is {
     text-align: right;
 }
-#how-we-help {
-    text-align: left;
+#our-passion-text{
+    font-size:25px;
+    letter-spacing:.05em;
+}
+#how-we-help-text,
+.team-card-back,
+.member-description {
+    color: #134E7D;
+}
+#the-team {
+    margin: auto;
+    width: 80%;
+    text-align: center;
 }
 
 #our-values .element-header {
@@ -38,23 +55,44 @@
 #our-values {
     text-align: left;
 }
+/*Value Cards*/
+.value-cards {
+    display: block;
+    height:300px;
+   
+}
+.value-card {
+    display: inline-block !important;
+    width: 18vw;
+    min-width:300px;
+    height: 500px;
+    margin:20px;
+     padding: 20px;
+    box-shadow: 2px 2px 4px 2px var(--box-shadow) !important;
+}
 
 
+.value-image {
+    display: block;
+    margin:auto;
+    width: 30%;
+}
 
-
+.value-card-heading {
+    font-size: 40px;
+}
 /*Team Cards*/
-
 .team-cards {
     display: block;
 }
 .team-card {
-    display: inline-block;
-   width:380px;
-    min-width:250px;
+    display: inline-block !important;
+    width: 380px;
+    min-width: 250px;
     max-width: 380px;
-    height: 50vw;
+    height: 550px;
     min-height: 400px;
-    max-height: 27vw;
+   
     perspective: 1000px;
     padding: 2em;
     background-color: transparent;
@@ -86,7 +124,6 @@
 
 .team-card-back {
     background-color: white;
-    color: #134E7D;
     text-align:left;
     transform: rotateY(180deg);
 }
@@ -126,7 +163,8 @@
     padding: 3vw 0 0 3vw;
 }
 #footer-cta{
-    height:500px;
+    min-height:300px;
+    height:auto;
 }
 
 #footer-cta-header,
@@ -164,7 +202,7 @@
 
 #footer-links-container {
     float: right;
-    margin-top: 12em;
+    padding-top: 10em;
     height:auto;
 }
 
