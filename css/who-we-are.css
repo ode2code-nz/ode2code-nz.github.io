@@ -38,6 +38,10 @@
     font-size:25px;
     letter-spacing:.05em;
 }
+
+#our-passion-text-break {
+    display: none;
+}
 #how-we-help-text,
 .team-card-back,
 .member-description {
@@ -98,7 +102,7 @@
     background-color: transparent;
 }
 .team-card-inner {
-    display: inline-block !important;
+    /*display: inline-block !important;*/
     position: relative;
     width: 100%;
     height: 100%;
@@ -202,7 +206,7 @@
 
 #footer-links-container {
     float: right;
-    padding-top: 10em;
+    padding: 10em 0 5em 0;
     height:auto;
 }
 
@@ -211,4 +215,42 @@
     display: block;
     color: white;
     text-align: right;
+}
+
+/*Tablet view*/
+@media(max-width:1200px) {
+
+    .who-we-are-element{
+        width:90%
+    }
+    h1 {
+        font-size:calc(12px + 2vw);
+    }
+
+    #our-passion-text {
+        font-size: calc(10px + 1.8vw);
+    }
+    #our-passion-text-break{
+        display:contents;
+    }
+
+    .element-text,
+    .member-description{
+        font-size: calc(10px + 1.4vw);
+    }
+    .value-cards{
+        flex-direction:column;
+    }
+    .value-card{
+        width:75%;
+        height:auto;
+        margin:auto;
+        padding:30px
+    }
+
+    .team-card {
+        display: flex !important;
+        width: 600px !important;
+        min-width: 80% !important;
+    }
 }
