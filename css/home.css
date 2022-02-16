@@ -11,28 +11,23 @@
     height: 850px;
 }
 
-
-
-.two-columns {
-    padding: 10em 10em;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
-    max-width: 1300px;
+.hero-header {
+    padding: 2em;
+    width: 1100px
 }
 
+.hero-btn {
 
+}
+
+/*Tablets*/
 @media (max-width: 1100px) {
-    .two-columns {
-        padding: 6em 1em !important;
-        flex-direction: column;
+    .hero-header {
+        width: 90%;
     }
+}
 
-    .left {
-        width: auto;
-    }
-    .right { width: auto;}
+/*Phones*/
+@media (max-width: 800px) {
+    
 }
