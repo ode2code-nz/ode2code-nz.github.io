@@ -1,3 +1,6 @@
+body{
+    min-width:100vw;
+}
 .nz {
     background-image: url(../img/NZ-space.jpg);
     background-color: #ffffff; /* Used if the image is unavailable */
@@ -12,8 +15,295 @@
 }
 
 .who-we-are-element{
-    padding:20px 0 20px 0;
+    padding:7em 0 7em 0;
     margin:auto;
     width:65%;
 }
+
+.banner-text {
+    font-size: calc(10px + .9vw);
+    font-weight: 300;
+    letter-spacing: 1px;
+    padding-left: 5em;
+    padding-top: 13%;
+    text-align: right;
+    width: 40%;
+}
+.who-we-are-element {
+    text-align: left;
+}
+.our-passion-is {
+    text-align: right;
+}
+.our-passion-text{
+    font-size:25px;
+    letter-spacing:.05em;
+}
+
+.our-passion-text-break {
+    display: none;
+}
+.how-we-help-text,
+.team-card-back,
+.member-description {
+    color: #134E7D;
+}
+.the-team {
+    margin: auto;
+    width: 80%;
+    text-align: center;
+}
+
+.our-values .element-header {
+    text-align: center;
+}
+.our-values {
+    text-align: left;
+}
+/*Value Cards*/
+.value-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.value-card {
+    display: flex;
+    flex-direction: column;
+    width: 18vw;
+    min-width: 320px;
+    max-width: 380px;
+    margin: 20px;
+}
+
+
+.value-image {
+     height:100px;
+    width:100px;
+    align-self:center;
+}
+
+
+/*Team Cards*/
+.team-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+ 
+}
+.team-card {
+    align-self:center;
+    width: 18vw;
+    min-width: 320px;
+    max-width: 380px;
+    margin: 20px;
+    height:400px;
+    perspective: 1000px;
+
+    background-color: transparent;
+}
+.team-card-inner {
+    /*display: inline-block !important;*/
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+/*    box-shadow: 2px 2px 4px 2px var(--box-shadow) !important;*/
+}
+
+.team-card:hover .team-card-inner {
+    transform: rotateY(180deg);
+}
+
+.team-card-front, .team-card-back {
+    margin: auto;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.team-card-back {
+    background-color: white;
+    text-align:left;
+    transform: rotateY(180deg);
+}
+
+.team-card-image {
+    margin:auto;
+    object-fit: contain;
+    height: 100%; width:100%;
+}
+
+.team-card-inner{
+    border-radius: 10px;
+}
+
+/*Footer*/
+
+.footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-image: url(../img/cta-footer-bg.svg);
+    background-position:top,right;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.footer-items {
+    display: flex;
+    flex-direction:column;
+    vertical-align: middle;
+    margin-top: 1em;
+}
+
+.footer-logo {
+    /*margin-left: 90px;*/
+    width:30vw;
+    min-width: 400px;
+    padding: 3vw 0 10vw 3vw;
+}
+.footer-cta {
+
+    margin: auto;
+    padding-top: 10vw;
+    padding-bottom:20px;
+    width: 65%
+}
+
+.footer-cta-header,
+.footer-cta-decription {
+    color: white;
+}
+
+
+.footer-cta-button,
+.footer-cta-button:hover {
+    border-width: 2px;
+    border-color: white;
+    border-style: solid;
+}
+
+    .footer-links {
+        position: center;
+        max-width: 850px;
+        padding-bottom: 20px;
+        padding-top: 50px;
+        margin: auto;
+        width: 75%;
+    }
+
+
+.footer-links-container {
+    float: right;
+    padding: 10em 0 5em 0;
+    height:auto;
+}
+
+.footer-links a {
+    font-size:14px;
+    padding: 5px 0 5px 5px;
+    display: block;
+    color: white;
+    text-align: right;
+}
+
+
+.banner-text-break {
+    display: none;
+}
+/*Tablet view*/
+@media(max-width:1200px)
+{
+   
+    .who-we-are-element {
+        width: 90%;
+        padding: 20px 1em 5vw 1em !important;
+    }
+
+    h1 {
+        font-size: calc(16px + 2vw) !important;
+        
+    }
+
+    .our-passion-text {
+        font-size: clamp(14px, calc(12px + 1vw), 25px) !important;
+    }
+
+    .responsive-break {
+        display: none;
+    }
+
+    .element-text,
+    .value-card-description,
+    .member-description {
+        font-size: 14px;
+        /*font-size: calc(11px + .9vw) !important;*/
+    }
+
+    .value-cards {
+        display: flex;
+        flex-direction: column;
+        align-content:center;
+        align-items: center;
+        justify-content:center;
+    }
+
+    .value-card {
+        width: 600px !important;
+        min-width: 200px !important;
+        max-width: 95% !important;
+        height:auto;
+        margin: 2em;
+    }
+
+    .value-image {
+        width: 50px;
+        height: 50px;
+        max-width: 30vw;
+        max-height: 30vw;
+        margin: auto;
+    }
+    .value-card-heading{
+        font-size:calc(10px + 2.2vw)
+    }
+    .banner-text {
+        padding-left: calc(1px + 5vw);
+        font-size: calc(12px + 1vw) !important;
+    }
+    .banner-text-break{
+        display:contents;
+    }
+    .banner-text-break-normal {
+        display: none;
+    }
+    .footer-logo{
+        width: max(100px, 30vw) !important;
+        min-width: 170px;
+    }
+
+    .footer-cta {
+        width:80%;
+        padding-top:calc(50px + 10vw);
+    }
+    .footer-cta-header {
+        font-size: min(calc(12px + 1.5vw), 25px) !important;
+    }
+    .footer-cta-decription {
+        font-size: min(calc(10px + 1vw), 20px)
+    }
+
+    .footer-cta-button{
+        width: min(80vw, 275px);
+    }
+    .footer-links-container{
+        padding-top: 5em !important;
+    }
+ }
 
