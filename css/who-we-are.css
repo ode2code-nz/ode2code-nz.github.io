@@ -1,6 +1,6 @@
-
-
-
+body{
+    min-width:100vw;
+}
 .nz {
     background-image: url(../img/NZ-space.jpg);
     background-color: #ffffff; /* Used if the image is unavailable */
@@ -20,89 +20,88 @@
     width:65%;
 }
 
-#banner-text{
-team
-    font-size:calc(4px + .9vw);
-    padding-left:5em;
-    padding-top:15%;
-    text-align:right;
-    width:40%
+.banner-text {
+    font-size: calc(10px + .9vw);
+    font-weight: 300;
+    letter-spacing: 1px;
+    padding-left: 5em;
+    padding-top: 13%;
+    text-align: right;
+    width: 40%;
 }
 .who-we-are-element {
     text-align: left;
 }
-#our-passion-is {
+.our-passion-is {
     text-align: right;
 }
-#our-passion-text{
+.our-passion-text{
     font-size:25px;
     letter-spacing:.05em;
 }
 
-#our-passion-text-break {
+.our-passion-text-break {
     display: none;
 }
-#how-we-help-text,
+.how-we-help-text,
 .team-card-back,
 .member-description {
     color: #134E7D;
 }
-#the-team {
+.the-team {
     margin: auto;
     width: 80%;
     text-align: center;
 }
 
-#our-values .element-header {
+.our-values .element-header {
     text-align: center;
 }
-#our-values {
+.our-values {
     text-align: left;
 }
 /*Value Cards*/
 .value-cards {
-    display: block;
-    height:300px;
-   
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 .value-card {
-    display: inline-block !important;
+    display: flex;
+    flex-direction: column;
     width: 18vw;
-    min-width:300px;
-    height: 500px;
-    margin:20px;
-     padding: 20px;
-    box-shadow: 2px 2px 4px 2px var(--box-shadow) !important;
+    min-width: 320px;
+    max-width: 380px;
+    margin: 20px;
 }
 
 
 .value-image {
-    display: block;
-    margin:auto;
-    width: 30%;
+     height:100px;
+    width:100px;
+    align-self:center;
 }
 
-.value-card-heading {
-    font-size: 40px;
-}
+
 /*Team Cards*/
 .team-cards {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: space-evenly;
 
+ 
 }
 .team-card {
-    width: 380px;
-    min-width: 250px;
+    align-self:center;
+    width: 18vw;
+    min-width: 320px;
     max-width: 380px;
-    height: 550px;
-    min-height: 400px;
-   
+    margin: 20px;
+    height:400px;
     perspective: 1000px;
-    padding: 2em;
-    background-color: transparent;
 
+    background-color: transparent;
 }
 .team-card-inner {
     /*display: inline-block !important;*/
@@ -111,7 +110,7 @@ team
     height: 100%;
     transition: transform 0.6s;
     transform-style: preserve-3d;
-    box-shadow: 2px 2px 4px 2px var(--box-shadow) !important;
+/*    box-shadow: 2px 2px 4px 2px var(--box-shadow) !important;*/
 }
 
 .team-card:hover .team-card-inner {
@@ -147,57 +146,51 @@ team
 
 /*Footer*/
 
-#footer {
+.footer {
     width: 100%;
     display: flex;
     flex-direction: column;
     background-image: url(../img/cta-footer-bg.svg);
-    min-height: 600px;
+    background-position:top,right;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-#footer-items {
-    display: block;
+.footer-items {
+    display: flex;
+    flex-direction:column;
     vertical-align: middle;
     margin-top: 1em;
 }
 
-#footer-logo {
+.footer-logo {
     /*margin-left: 90px;*/
     width:30vw;
     min-width: 400px;
-    padding: 3vw 0 0 3vw;
+    padding: 3vw 0 10vw 3vw;
 }
-#footer-cta{
-    min-height:300px;
-    height:auto;
+.footer-cta {
+
+    margin: auto;
+    padding-top: 10vw;
+    padding-bottom:20px;
+    width: 65%
 }
 
-#footer-cta-header,
-#footer-cta-decription {
+.footer-cta-header,
+.footer-cta-decription {
     color: white;
 }
 
-#footer-cta{
-    margin:auto;
-    padding-top:100px;
-    width:50%
-}
 
-#footer-cta-button {
-    width: 30%;
-    height: 50px;
-    background: linear-gradient(90deg, rgb(7,41,86) 0%, rgb(5,85,137) 35%, rgb(2,150,213) 100%);
-    border-radius: 0 20px 0 20px;
+.footer-cta-button,
+.footer-cta-button:hover {
+    border-width: 2px;
     border-color: white;
-    border-width:1px;
-    color: white;
+    border-style: solid;
 }
-    #footer-cta-button:hover {
-        background: linear-gradient(90deg, rgb(2,150,213) 0%, rgb(5,85,137) 35%,rgb(7,41,86) 100%);
-    }
-    #footer-links {
+
+    .footer-links {
         position: center;
         max-width: 850px;
         padding-bottom: 20px;
@@ -207,54 +200,110 @@ team
     }
 
 
-#footer-links-container {
+.footer-links-container {
     float: right;
     padding: 10em 0 5em 0;
     height:auto;
 }
 
-#footer-links a {
+.footer-links a {
+    font-size:14px;
     padding: 5px 0 5px 5px;
     display: block;
     color: white;
     text-align: right;
 }
 
+
+.banner-text-break {
+    display: none;
+}
 /*Tablet view*/
-@media(max-width:1200px) {
-
-    .who-we-are-element{
-        width:90%
+@media(max-width:1200px)
+{
+   
+    .who-we-are-element {
+        width: 90%;
+        padding: 20px 1em 5vw 1em !important;
     }
+
     h1 {
-        font-size:calc(12px + 2vw);
+        font-size: calc(16px + 2vw) !important;
+        
     }
 
-    #our-passion-text {
-        font-size: calc(10px + 1.8vw);
+    .our-passion-text {
+        font-size: clamp(14px, calc(12px + 1vw), 25px) !important;
     }
-    #our-passion-text-break{
-        display:contents;
+
+    .responsive-break {
+        display: none;
     }
 
     .element-text,
-    .member-description{
-        font-size: calc(10px + 1.4vw);
-    }
-    .value-cards{
-        flex-direction:column;
-    }
-    .value-card{
-        width:75%;
-        height:auto;
-        margin:auto;
-        padding:30px
+    .value-card-description,
+    .member-description {
+        font-size: 14px;
+        /*font-size: calc(11px + .9vw) !important;*/
     }
 
-    .team-card {
-        float:left;/*
-        display: flex !important;
-        width: 600px !important;
-        min-width: 80% !important;*/
+    .value-cards {
+        display: flex;
+        flex-direction: column;
+        align-content:center;
+        align-items: center;
+        justify-content:center;
     }
-}
+
+    .value-card {
+        width: 600px !important;
+        min-width: 200px !important;
+        max-width: 95% !important;
+        height:auto;
+        margin: 2em;
+    }
+
+    .value-image {
+        width: 50px;
+        height: 50px;
+        max-width: 30vw;
+        max-height: 30vw;
+        margin: auto;
+    }
+    .value-card-heading{
+        font-size:calc(10px + 2.2vw)
+    }
+    .banner-text {
+        padding-left: calc(1px + 5vw);
+        font-size: calc(12px + 1vw) !important;
+    }
+    .banner-text-break{
+        display:contents;
+    }
+    .banner-text-break-normal {
+        display: none;
+    }
+    .footer-logo{
+        width: max(100px, 30vw) !important;
+        min-width: 170px;
+    }
+
+    .footer-cta {
+        width:80%;
+        padding-top:calc(50px + 10vw);
+    }
+    .footer-cta-header {
+        font-size: min(calc(12px + 1.5vw), 25px) !important;
+    }
+    .footer-cta-decription {
+        font-size: min(calc(10px + 1vw), 20px)
+    }
+
+    .footer-cta-button{
+        width: min(80vw, 275px);
+    }
+    .footer-links-container{
+        padding-top: 5em !important;
+    }
+ }
+
