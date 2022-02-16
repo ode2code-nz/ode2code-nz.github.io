@@ -62,17 +62,40 @@
     </nav>
 
     <!-- Header -->
+    
+<!--Feedback-->
+<!--You have a tendency to over code the css, which I understand as you want control over all the elements. What you should try to do is start with the
+bottom-most container. The <div>that wraps around the rest of the stuff.</div> you can define padding, positioning (usually using display flex) and 
+other base styles (background image etc) in this container. If you define sub-styles (such as the color of the text) in the base you will not need
+to do it in the nested tag <p><h1> etc-->
 
+<!--Example-->
+<!--Note, I have put the css in style for clarity, but in real life it should be in one or multiple classes in the code. Classes can be doubled up and
+have inheritance (class="DefineFirstColor DefineSecondColor" : the second color will override the first.).-->
 
-    <div class="page-heading center">
+<div style="padding: 1em 3em; 
+            display: flex; 
+            flex-direction: row; 
+            flex-wrap: nowrap; 
+            align-items: center; 
+            justify-items: center; 
+            color: white; 
+            font-weight: 500;"> 
+    
+    <h2>Example</h2> <!--This will be centered, be padded, will not wrap and text will be bold and white.-->
+</div>
+<!--/Feedback-->
+
+<div class="page-heading center">
         <h2 class="white">Who We Are</h2>
     </div>
 
     <div class="who-we-are-element our-passion-is">
         <h1 class="element-header">Our passion is reliable useful software</h1>
         <br />
-        <div class="element-body">
-            <p class="same-line-bold element-text our-passion-text" >
+        <div class="element-body"> <!--The compiler cannot find, or you haven't defined this class. If the tag (div, p, h1 etc.) does not need any special css you do not need to add a class to it.-->
+            <p class="same-line-bold element-text our-passion-text">
+                <!--This br/ applies a break and then removes it with the class. It is redundant.-->
                 The ode2code team love to solve business problems<br class="our-passion-text-break"/> by building great software.
             </p>
         </div>
@@ -96,8 +119,8 @@
     </div>
 
         <div class="who-we-are-element center our-values">
-        <h1 class="element-header">Our Softweare Development Values</h1>
-        <br />
+        <h1 class="element-header">Our Software Development Values</h1>
+        <br /> <!--div will naturally be padded, better to define the padding of the div class below first before adding any breaks.-->
         <div class="element-body">
 
 
@@ -105,7 +128,7 @@
                 <div class="card value-card">
                     <img class="value-image" src="https://static3.depositphotos.com/1002188/144/i/600/depositphotos_1448005-stock-photo-smile.jpg">
                     <h2 class="value-card-heading">
-                        Best Practices<br class="responsive-break" />&nbsp;
+                        Best Practices<br class="responsive-break" />&nbsp; <!--This can be simpler, using flex-wrap, you don't even need to define it in the <p> tag just in the container it is in.-->
                     </h2>
                     <p class="value-card-description">
                         Mewtwo is a Pokémon created by science. It is a bipedal, humanoid Pokémon with some feline features.
@@ -144,7 +167,7 @@
 
     <div class="nz element-body element-text" alt="nz-banner">
         <div class="white banner-text" align="left">
-            We&nbsp;are&nbsp;proud&nbsp;to&nbsp;be&nbsp;a&nbsp;<br class="banner-text-break"/> New&nbsp;Zealand<span class="banner-text-break-normal"><br /></span><span class="banner-text-break">&nbsp;</span>company&nbsp;<span class="banner-text-break"><br /></span>creating&nbsp;solutions&nbsp;gloabally.
+            We&nbsp;are&nbsp;proud&nbsp;to&nbsp;be&nbsp;a&nbsp;<br class="banner-text-break"/> New&nbsp;Zealand<span class="banner-text-break-normal"><br /></span><span class="banner-text-break">&nbsp;</span>company&nbsp;<span class="banner-text-break"><br /></span>creating&nbsp;solutions&nbsp;globally.
 </div>
     </div>
 
