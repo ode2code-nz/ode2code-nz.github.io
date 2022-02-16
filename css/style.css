@@ -8,7 +8,7 @@ body, html {
 	font-family: 'Poppins', sans-serif;
 	text-rendering: optimizeLegibility !important;
 	-webkit-font-smoothing: antialiased !important;
-	color: #383838;
+	color: var(--text);
 	font-weight: 400;
 	width: 100% !important;
 	height: 100% !important;
@@ -22,21 +22,22 @@ h1, h2, h3, h4 {
 
 h1 {
     font-size: 46px;
-    color: #134E7D;
+    color: var(--header-color);
     line-height: 1.5;
 }
 
 h2 {
-    font-size: 30px;
-    color: #134E7D;
+	font-size: 30px;
+	color: var(--header-color);
     line-height: 1.5;
 }
 
 /*Subheading*/
 h3 {
-    font-size: 18px;
-    font-weight: 600;
+	font-size: 18px;
+	font-weight: 600;
 	color: var(--secondary-color);
+    line-height: normal;
 }
 h4 {
     font-size: 14px;
@@ -50,6 +51,8 @@ h5 {
 }
 p {
 	font-size: 14px;
+	color: var(--text);
+	line-height: normal;
 }
 p.intro {
 	margin: 12px 0 0;
