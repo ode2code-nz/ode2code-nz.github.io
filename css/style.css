@@ -94,15 +94,10 @@ hr {
 #menu.navbar-default {
 	background-color: #fff;
 	border-color: rgba(231, 231, 231, 0);
-	box-shadow: 0 0 10px rgba(2,144,206,0.2)
+    box-shadow: 0 0 10px rgba(2, 144, 206, 0.2);
+
 }
-#menu a.navbar-brand {
-	font-family: 'Poppins', sans-serif;
-	font-size: 30px;
-	font-weight: 300;
-	color: #333;
-	/* color: #5ca9fb; */
-}
+
 .span-bracket{
 	font-family: 'Poppins', sans-serif;
 	color: #6372ff;
