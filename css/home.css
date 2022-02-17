@@ -17,7 +17,8 @@
 }
 
 .hero-btn {
-
+    align-self: flex-end;
+    width: 40%;
 }
 
 /*Tablets*/
@@ -29,5 +30,13 @@
 
 /*Phones*/
 @media (max-width: 800px) {
-    
+    .hero-btn {
+        align-self: auto;
+        width: auto;
+    }
+}
+
+/*Smaller Phones*/
+@media (max-width: 500px) {
+
 }

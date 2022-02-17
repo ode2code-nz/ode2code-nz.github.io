@@ -235,3 +235,10 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
         font-size: 36px;
     }
 }
+
+/*Smaller Phones*/
+@media (max-width: 500px) {
+    h1 {
+        font-size: 28px;
+    }
+}
