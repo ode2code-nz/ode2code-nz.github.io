@@ -219,7 +219,7 @@ body{
     display: none;
 }
 /*Tablet view*/
-@media(max-width:1200px)
+@media(max-width:1100px)
 {
    
     .who-we-are-element {
@@ -286,31 +286,8 @@ body{
     .banner-text-break-normal {
         display: none;
     }
-    .footer-logo{
-        width: max(100px, 30vw) !important;
-        min-width: 170px;
-    }
 
-    .footer-cta {
-        width:80%;
-        padding-top:calc(50px + 10vw);
-    }
-    .footer-cta-header {
-        font-size: min(calc(12px + 1.5vw), 25px) !important;
-    }
-    .footer-cta-decription {
-        font-size: min(calc(10px + 1vw), 20px)
-    }
-
-    .footer-cta-button{
-        width: min(80vw, 275px);
-    }
-    .footer-links-container{
-        padding-top: 5em !important;
-    }
  }
 
-.no-wrap{
-    white-space:nowrap;
-}
+
 
