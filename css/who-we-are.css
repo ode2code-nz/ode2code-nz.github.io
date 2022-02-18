@@ -11,35 +11,12 @@ body{
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover; /* Resize the background image to cover the entire container */
 
- 
-}
-.heading{
-    display:flex;
 }
 
-.page-heading {
-    background-repeat: no-repeat;
-    height: 600px;
-}
-.page-heading.left {
-    flex: 35%;
-    background-image: url(../img/Shape.png) !important;
-    background-size: cover;
-    background-position: right;
-    object-fit: contain;
-   
-    color: white;
-}
 
-h2.header{
-    margin-top:50%;
-}
-.page-heading.right {
-    flex: 65%;
-    background-image: url(../img/kjh.png);
-    background-size: contain;
-     background-position: bottom;
-    object-fit: contain;
+
+.page-heading-two-columns .right {
+    background-image: url(../img/kjh.png) !important;
 }
 
 

@@ -1,4 +1,8 @@
 
+.page-heading-two-columns .right {
+	background-image: url(../img/what-we-do-stock.png) !important;
+}
+
 .find-out-more {
 	color: var(--primary-color);
 	border-bottom: solid 2px var(--primary-color) !important;

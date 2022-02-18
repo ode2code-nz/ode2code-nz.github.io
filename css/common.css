@@ -47,6 +47,40 @@
     max-width: 1300px;
 }
 
+
+/*Page headings two columns*/
+.page-heading-two-columns {
+    display: flex;
+}
+
+.page-heading-two-columns .left,
+.page-heading-two-columns .right {
+    background-repeat: no-repeat;
+    height: 600px;
+}
+
+.page-heading-two-columns .left {
+    flex: 30%;
+    background-image: url(../img/Shape.png) !important;
+    background-size: cover;
+    background-position: right;
+    object-fit: contain;
+    color: white;
+}
+
+.page-heading-two-columns .left .header {
+    width:75%;
+    margin-top: 50%;
+    text-align:center;
+}
+
+    .page-heading-two-columns .right {
+        flex: 70%;
+        background-size: contain;
+        background-position: bottom;
+        object-fit: contain;
+    }
+
 @media (max-width: 768px) {
     .left {
         width: 100% !important;
@@ -247,28 +281,28 @@ fieldset {
     padding-bottom: 1em;
 }
 
-    fieldset label,
-    fieldset input,
-    fieldset textarea {
-        width: 100%;
-        min-width: 100%;
-    }
+fieldset label,
+fieldset input,
+fieldset textarea {
+    width: 100%;
+    min-width: 100%;
+}
 
-    fieldset input {
-        color: #046096;
-        font-weight: 600;
-    }
+fieldset input {
+    color: #046096;
+    font-weight: 600;
+}
 
-        fieldset input::placeholder,
-        fieldset textarea::placeholder {
-            color: #046096;
-            font-weight: 500;
-        }
-
-    fieldset textarea {
+    fieldset input::placeholder,
+    fieldset textarea::placeholder {
         color: #046096;
         font-weight: 500;
     }
+
+fieldset textarea {
+    color: #046096;
+    font-weight: 500;
+}
 
     fieldset input,
     fieldset textarea,
