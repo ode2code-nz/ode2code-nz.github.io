@@ -32,7 +32,8 @@ body{
 .who-we-are-element {
     text-align: left;
 }
-.our-passion-is {
+.our-passion-is,
+.how-do-we-help{
     text-align: right;
 }
 .our-passion-text{
@@ -264,8 +265,8 @@ body{
     }
 
     .value-image {
-        width: 50px;
-        height: 50px;
+        width: 50px !important;
+        height: 50px !important;
         max-width: 30vw;
         max-height: 30vw;
         margin: auto;
