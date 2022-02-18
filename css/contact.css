@@ -69,9 +69,12 @@
 }
 
 /*Contact Form*/
+
+.form-elements{
+    padding-bottom:1em;
+}
 .contact-item *,
-fieldset label
-{
+fieldset label {
     color: #818181;
     font-weight: bold;
 }
@@ -103,7 +106,7 @@ fieldset label
     color: #FBBE2F;
 }
 
-#contact-header-description {
+.contact-header-description {
     color: #4D7A9D;
     font-weight:400;
 }
@@ -121,89 +124,36 @@ fieldset label
     margin: 2em 0 12em 0;
 }
 
-    #contact-header-heading,
+    .contact-header-heading,
     .contact-form-header {
         color: #134E7D;
         font-size: 30px;
         font-weight: bold;
     }
 
-
-
-.contact-field {
-    display: flex;
-    flex-direction: column-reverse;
-    min-width: 100%;
-}
-
-fieldset label,
-fieldset input,
-fieldset textarea{
-    width:100%;
-    min-width:100%;
-}
-
-fieldset input {
-    color: #046096;
-    font-weight: 600;
-}
-    fieldset input::placeholder,
-    fieldset textarea::placeholder {
-        color: #046096;
-        font-weight: 500;
-    }
-
-fieldset textarea {
-    color: #046096;
-    font-weight: 500;
-}
-fieldset input,
-fieldset textarea,
-#contact-submit-button {
-    border-color: lightgrey;
-    border-width: 0px;
-    border-radius: 3px 3px;
-    box-shadow: 2px 2px 4px 2px var(--box-shadow) !important;
-    padding: 2px 15px 4px 15px;
-}
-
-
 .honeypot-field {
     display: none;
 }
 
-
-input:focus,
-input:focus-visible,
-textarea:focus,
-textarea:focus-visible {
-    border-color: #4BAEDA !important;
-    border-width: 1px !important;
-    box-shadow: none !important;
-    border-radius: 2px 15px !important;
-}
-
-
-
-#contact-submit-button {
+.contact-submit-button {
     background-color: #134E7D;
     border-radius: 5px;
     color: white;
 }
 
-    #contact-submit-button:hover {
+    .contact-submit-button:hover {
         background-color: white;
         color: #134E7D;
     }
 
-    #contact-submit-button:active {
+    .contact-submit-button:active {
         background-color: #289FD3;
         color: white;
     }
 
 /**Footer*/
 
-#contact-footer {
+/*.contact-footer {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -214,11 +164,11 @@ textarea:focus-visible {
     justify-content: space-between;
 }
 
-#contact-footer-items {
+.contact-footer-items {
     display: block;
     vertical-align: middle;
     margin-top: 1em;
-}
+}*/
 
 
 
@@ -239,7 +189,7 @@ textarea:focus-visible {
         color: red !important;
         border-width: 5px !important;
     }
-    #contact-header-heading,
+    .contact-header-heading,
     .contact-form-header {
         font-size: 20px !important;
     }
@@ -247,7 +197,7 @@ textarea:focus-visible {
  /*   .contact-form-header{
         text-align:center;
     }*/
-    #contact-header-description-break {
+    .contact-header-description-break {
         display: none;
     }
 
@@ -264,7 +214,7 @@ textarea:focus-visible {
         font-size:14px;
     }
     
-    .footer-link{
+/*    .footer-link{
         font-size:12px;
     }
 
@@ -273,6 +223,6 @@ textarea:focus-visible {
         min-width:120px;
         max-width:300px;
         width:40%;
-    }
+    }*/
 }
 

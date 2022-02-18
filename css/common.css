@@ -239,6 +239,57 @@
         height: auto;
     }
 }
+/*Contact inputs*/
+fieldset {
+    display: flex;
+    flex-direction: column-reverse;
+    min-width: 100%;
+    padding-bottom: 1em;
+}
+
+    fieldset label,
+    fieldset input,
+    fieldset textarea {
+        width: 100%;
+        min-width: 100%;
+    }
+
+    fieldset input {
+        color: #046096;
+        font-weight: 600;
+    }
+
+        fieldset input::placeholder,
+        fieldset textarea::placeholder {
+            color: #046096;
+            font-weight: 500;
+        }
+
+    fieldset textarea {
+        color: #046096;
+        font-weight: 500;
+    }
+
+    fieldset input,
+    fieldset textarea,
+    .contact-submit-button {
+        border-color: lightgrey;
+        border-width: 0px;
+        border-radius: 3px 3px;
+        box-shadow: 2px 2px 4px 2px var(--box-shadow) !important;
+        padding: 2px 15px 4px 15px;
+    }
+
+input:focus,
+input:focus-visible,
+textarea:focus,
+textarea:focus-visible {
+    border-color: #4BAEDA !important;
+    border-width: 1px !important;
+    box-shadow: none !important;
+    border-radius: 2px 15px !important;
+}
+
 
 .footer {
     width: 100%;
