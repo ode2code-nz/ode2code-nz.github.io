@@ -159,37 +159,7 @@
     padding: 5em;
 }
 
-/*Animated Line*/
 
-.line-container {
-    position: absolute;
-    width: 65vw;
-    min-width: 100px;
-    height: 9px;
-}
-.line-left {
-    left: 0;
-}
-
-.line-right {
-    right: 0;
-}
-
-.line-center {
-    left: 50px;
-}
-.animated-line {
-    height: 100%;
-    min-width: 100%;
-    background: -webkit-linear-gradient(to right, var(--secondary-color) 35%, var(--primary-color));
-    background: -o-linear-gradient(to right,var(--secondary-color) 35%, var(--primary-color));
-    background: -moz-linear-gradient(to right, var(--secondary-color) 35%, var(--primary-color));
-    background: linear-gradient(to right, var(--secondary-color) 35%, var(--primary-color));
-    background-size: 200% 200%;
-    -webkit-animation: Animation 5s ease infinite;
-    -moz-animation: Animation 5s ease infinite;
-    animation: Animation 5s ease infinite;
-}
     .card {
     border-radius: 3px 3px;
     box-shadow: 2px 2px 4px 2px var(--box-shadow) !important;

@@ -62,16 +62,6 @@
     </nav>
 
     <!-- Header -->
-    
-<!--Feedback-->
-<!--You have a tendency to over code the css, which I understand as you want control over all the elements. What you should try to do is start with the
-bottom-most container. The <div>that wraps around the rest of the stuff.</div> you can define padding, positioning (usually using display flex) and 
-other base styles (background image etc) in this container. If you define sub-styles (such as the color of the text) in the base you will not need
-to do it in the nested tag <p><h1> etc-->
-
-<!--Example-->
-<!--Note, I have put the css in style for clarity, but in real life it should be in one or multiple classes in the code. Classes can be doubled up and
-have inheritance (class="DefineFirstColor DefineSecondColor" : the second color will override the first.).-->
 
 <div style="padding: 1em 3em; 
             display: flex; 
@@ -82,7 +72,7 @@ have inheritance (class="DefineFirstColor DefineSecondColor" : the second color 
             color: white; 
             font-weight: 500;"> 
     
-    <h2>Example</h2> <!--This will be centered, be padded, will not wrap and text will be bold and white.-->
+    <h2>Example</h2>
 </div>
 <!--/Feedback-->
 
@@ -93,9 +83,8 @@ have inheritance (class="DefineFirstColor DefineSecondColor" : the second color 
     <div class="who-we-are-element our-passion-is">
         <h1 class="element-header">Our passion is reliable useful software</h1>
         <br />
-        <div class="element-body"> <!--The compiler cannot find, or you haven't defined this class. If the tag (div, p, h1 etc.) does not need any special css you do not need to add a class to it.-->
+        <div class="element-body"> 
             <p class="same-line-bold element-text our-passion-text">
-                <!--This br/ applies a break and then removes it with the class. It is redundant.-->
                 The ode2code team love to solve business problems<br class="our-passion-text-break"/> by building great software.
             </p>
         </div>
