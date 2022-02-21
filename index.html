@@ -37,32 +37,34 @@
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
     <!-- Navigation
         ==========================================-->
-    <nav id="menu" class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+<nav id="menu" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
 
-                <!--Header Logo-->
-                <a style="max-width:25%" href="index.html">
-                    <img src="img/logo.svg" style="max-width: 110px; font-family:'Poppins';" alt="Logo">
-                </a>
-            </div>
-
-            <!-- Header Section Buttons -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="pages/what-we-do.html">What We Do</a></li>
-                    <li><a href="pages/who-we-are.html">Who We Are</a></li>
-                    <li><a href="pages/how-we-work.html">How We Work</a></li>
-                    <li><a href="pages/contact.html">Contact Us</a></li>
-                    <li><a href="pages/contact.html" class="btn-primary btn-quote" style="display: flex; padding: 0;">Get a free quote</a></li>
-                </ul>
-            </div>
-            <!-- navbar-collapse -->
+            <!--Header Logo-->
+            <a style="max-width:25%" href="index.html">
+                <img src="img/logo.svg" class="nav-logo" alt="Logo">
+            </a>
         </div>
-    </nav>
-    <!-- Header -->
+
+        <!-- Header Section Buttons -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="pages/what-we-do.html">What We Do</a></li>
+                <li><a href="pages/who-we-are.html">Who We Are</a></li>
+                <li><a href="pages/how-we-work.html">How We Work</a></li>
+                <li><a href="pages/contact.html">Contact Us</a></li>
+                <li><a href="pages/contact.html" class="btn-primary btn-quote" style="display: flex; padding: 0;">Get a free quote</a></li>
+            </ul>
+        </div>
+        <!-- navbar-collapse -->
+    </div>
+</nav>
+
+
+<!-- Header -->
     <header id="header">
         <div id="hero-animation" class="hero-animation" style="height: 340px;">
             <canvas id="demo-canvas" class="animation-canvas" width="1366" height="340"></canvas>
@@ -97,7 +99,7 @@
 
             <div class="right" style="width: 48%;">
                 <img class="to-hide" style="width: 400px" src="img/wwd.png" />
-                <div class="center"><a href="pages/what-we-do.html" class="tertiary-btn" style=" width: 190px;">What We Do<i class="glyphicon glyphicon-circle-arrow-right"></i></a></div>
+                <div class="center"><a href="pages/what-we-do.html" class="tertiary-btn" style="width: 190px;">What We Do<i class="glyphicon glyphicon-circle-arrow-right"></i></a></div>
             </div>
         </div>
     </div>
@@ -111,7 +113,7 @@
         <div class="two-columns" style="justify-content: space-between;">
             <div>
                 <img style="width:400px" src="img/pos.png" />
-                <div class="center"><a href="pages/who-we-are.html" class="tertiary-btn" style=" width: 190px;">Who We Are<i class="glyphicon glyphicon-circle-arrow-right"></i></a></div>
+                <div class="center"><a href="pages/who-we-are.html" class="tertiary-btn" style="width: 190px;">Who We Are<i class="glyphicon glyphicon-circle-arrow-right"></i></a></div>
             </div>
             <div class="right">
                 <h2>We are....</h2>
@@ -133,9 +135,9 @@
             <div class="animated-line"></div>
         </div>
 
-        <div class="two-columns" style="padding :0 7em">
-            <h2 class="left">Want to know more about<br/> our way of working?</h2>
-            <a href="pages/how-we-work.html" class="secondary-btn right">Our Process in Detail <i class="glyphicon glyphicon-arrow-right"></i></a>
+        <div class="two-columns" style="padding:0 7em">
+            <h2 class="left">Want to know more about<br /> our way of working?</h2>
+            <a href="pages/how-we-work.html" class="tertiary-btn" style="font-size: 20px; width: 250px;">Our Process in Detail<i class="glyphicon glyphicon-circle-arrow-right"></i></a>
         </div>
 
         <div class="line-container">
@@ -143,11 +145,12 @@
         </div>
     </div>
 
-<div id="footer">
-        <img id="footer-logo" src="img/logo.svg" alt="ode2code-logo" />
+<div class="footer">
+    <div class="footer-items">
+        <img class="footer-logo" src="img/logo.svg" alt="ode2code-logo" />
 
-        <div class="footer-cta center">
-            <div class="footer-cta-items left">
+        <div class="center">
+            <div class="footer-cta left">
                 <div>
                     <h2 class="white">Are you ready to get started?<br />Book a Free Strategy Session</h2>
                     <p class="white">We help you discover what's possible, then we make it happen.</p>
@@ -159,14 +162,15 @@
 
         <div id="footer-links">
             <div id="footer-links-container">
-                <a class="footer-link" href="">HOME</a>
+                <a class="footer-link" href="index.html">HOME</a>
                 <a class="footer-link" href="pages/what-we-do.html">WHAT WE DO</a>
                 <a class="footer-link" href="pages/who-we-are.html">WHO WE ARE</a>
                 <a class="footer-link" href="pages/how-we-work.html">HOW WE WORK</a>
             </div>
         </div>
-        
+
         <div class="center white">© 2020 ode2code</div>
+    </div>
 </div>
 
 
@@ -176,10 +180,8 @@
     <script type="text/javascript" src="js/animation.js"></script>
     <script type="text/javascript" src="js/jquery.1.11.1.js"></script>
     <script type="text/javascript" src="js/bootstrap.js"></script>
-    <!--<script type="text/javascript" src="js/SmoothScroll.js"></script>-->
     <script type="text/javascript" src="js/nivo-lightbox.js"></script>
     <script type="text/javascript" src="js/jqBootstrapValidation.js"></script>
-    <!--<script type="text/javascript" src="js/contact_me.js"></script>-->
     <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>

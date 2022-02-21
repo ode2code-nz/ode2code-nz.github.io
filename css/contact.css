@@ -1,14 +1,19 @@
+.contact-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    height: 540px;
+}
+
 .body{
     display:block;
 }
 
 .contact-body,
 .line-container
-#footer-links{
-    margin: auto;
-    width: 75%;
-    max-width:850px;
-}
+
 .contact-body {
     display: flex;
     flex-direction: column;
@@ -16,11 +21,7 @@
 
 .contact-form-header,
 .form-elements,
-#footer-links {
-    width: 75% !important;
-    margin-left: auto;
-    margin-right: auto;
-}
+
 
 /*Contact Cards*/
 .contact-items {
@@ -97,15 +98,6 @@ fieldset label {
 }
 
 
-/*
-    A + B
-    Select element B whose previous element is A
-*/
-.contact-input:not(:placeholder-shown) + .contact-input-label .contact-input-number,
-.contact-textarea:not(:placeholder-shown) + .contact-input-label .contact-input-number {
-    color: #FBBE2F;
-}
-
 .contact-header-description {
     color: #4D7A9D;
     font-weight:400;
@@ -139,6 +131,8 @@ fieldset label {
     background-color: #134E7D;
     border-radius: 5px;
     color: white;
+    align-self: flex-start;
+    margin: 2em 0;
 }
 
     .contact-submit-button:hover {
@@ -149,29 +143,8 @@ fieldset label {
     .contact-submit-button:active {
         background-color: #289FD3;
         color: white;
+        
     }
-
-/**Footer*/
-
-/*.contact-footer {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    background-image: url(../img/cta-footer-bg.svg);
-    min-height: 420px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    justify-content: space-between;
-}
-
-.contact-footer-items {
-    display: block;
-    vertical-align: middle;
-    margin-top: 1em;
-}*/
-
-
-
 
 @media(max-width:767px) {
 
@@ -194,35 +167,40 @@ fieldset label {
         font-size: 20px !important;
     }
 
- /*   .contact-form-header{
-        text-align:center;
-    }*/
     .contact-header-description-break {
         display: none;
     }
 
-    .contact-form-header,
-    .form-elements,
-    #footer-links {
-        width: 90% !important;
-        margin-left: auto;
-        margin-right: auto;
-    }
+
 
     input::placeholder,
     textarea::placeholder{
         font-size:14px;
     }
-    
-/*    .footer-link{
-        font-size:12px;
-    }
-
-    #footer-logo{
-        margin-left:2%;
-        min-width:120px;
-        max-width:300px;
-        width:40%;
-    }*/
 }
 
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+label {
+    text-align: -webkit-left;
+    text-align: left;
+    text-align: -moz-left;
+}
+
+input,
+textarea {
+    width: 90%;
+    border-radius: 2px 15px !important;
+}
+
+input,
+textarea {
+    width: 90%;
+    border-radius: 2px 15px !important;
+}

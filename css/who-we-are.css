@@ -1,6 +1,7 @@
-body{
-    min-width:100vw;
+.page-heading-two-columns {
+    background-image: url(../img/kjh.png) !important;
 }
+
 .nz {
     background-image: url(../img/NZ-space.jpg) !important;
     background-color: #ffffff; /* Used if the image is unavailable */
@@ -13,11 +14,6 @@ body{
 
 }
 
-
-
-.page-heading-two-columns .right {
-    background-image: url(../img/kjh.png) !important;
-}
 
 
 .who-we-are-element {
@@ -39,15 +35,15 @@ body{
     text-align: left;
 }
 .our-passion-is,
-.how-do-we-help{
-    margin:auto;
-    align-content:center;
+.how-do-we-help {
+    margin: auto;
+    align-content: center;
     text-align: right;
-    width:60%;
-    padding:2em;
+    width: 60%;
+    padding: 6em 0 3em 0;
 }
 .our-passion-text{
-    font-size:25px;
+    font-size:15px;
    
 }
 
@@ -83,7 +79,7 @@ body{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    width:90%;
+    width:100%;
     margin:auto;
 }
 .value-card {
@@ -97,9 +93,10 @@ body{
 
 
 .value-image {
-     height:100px;
-    width:100px;
+    height:90px;
+    width:90px;
     align-self:center;
+    margin: 1em;
 }
 
 
@@ -164,76 +161,6 @@ body{
     border-radius: 10px;
 }
 
-/*Footer*/
-
-.footer {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    background-image: url(../img/cta-footer-bg.svg);
-    background-position:top,right;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.footer-items {
-    display: flex;
-    flex-direction:column;
-    vertical-align: middle;
-    margin-top: 1em;
-}
-
-.footer-logo {
-    /*margin-left: 90px;*/
-    width:30vw;
-    min-width: 400px;
-    padding: 3vw 0 10vw 3vw;
-}
-.footer-cta {
-
-    margin: auto;
-    padding-top: 10vw;
-    padding-bottom:20px;
-    width: 65%
-}
-
-.footer-cta-header,
-.footer-cta-decription {
-    color: white;
-}
-
-
-.footer-cta-button,
-.footer-cta-button:hover {
-    border-width: 2px;
-    border-color: white;
-    border-style: solid;
-}
-
-    .footer-links {
-        position: center;
-        max-width: 850px;
-        padding-bottom: 20px;
-        padding-top: 50px;
-        margin: auto;
-        width: 75%;
-    }
-
-
-.footer-links-container {
-    float: right;
-    padding: 10em 0 5em 0;
-    height:auto;
-}
-
-.footer-links a {
-    font-size:14px;
-    padding: 5px 0 5px 5px;
-    display: block;
-    color: white;
-    text-align: right;
-}
-
 
 .banner-text-break {
     display: none;
@@ -291,7 +218,7 @@ body{
         margin: auto;
     }
     .value-card-heading{
-        font-size:calc(10px + 2.2vw)
+        font-size: 16px !important;
     }
     .banner-text {
         padding-left: calc(1px + 5vw);

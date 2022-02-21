@@ -22,6 +22,7 @@
         ================================================== -->
     <link rel="stylesheet" type="text/css" href="../css/common.css">
     <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/animations.css">
     <link rel="stylesheet" type="text/css" href="../css/common.css">
     <link rel="stylesheet" type="text/css" href="../css/contact.css">
     <link rel="stylesheet" type="text/css" href="../css/nivo-lightbox/nivo-lightbox.css">
@@ -45,8 +46,8 @@
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
 
                 <!--Header Logo-->
-                <a style="max-width:25%" class="navbar-brand page-scroll" href="../index.html">
-                    <img src="../img/logo.svg" style="max-width: 110px" alt="Logo">
+                <a style="max-width:25%" href="../index.html">
+                    <img src="../img/logo.svg" class="nav-logo" alt="Logo">
                 </a>
             </div>
 
@@ -60,128 +61,121 @@
                     <li><a href="contact.html" class="btn-primary btn-quote" style="display: flex; padding: 0;">Get a free quote</a></li>
                 </ul>
             </div>
-            <!-- /.navbar-collapse -->
+            <!-- navbar-collapse -->
         </div>
     </nav>
-    <div class="contact-body">
-        <div class="contact-header">
-            <!--<div class="contact-header-heading">Contact Us</div>-->
-            <h2>Contact Us</h2>
-            <br />
-            <div class="contact-header-description">Send us a brief description of your requirements so we may go&nbsp;<br class="contact-header-description-break" />through them before our first meeting.</div>
-        </div>
 
-        <div class="contact-items">
-            <div class="contact-item" id="email-link">
-                <img class="contact-item-img" src="../img/email-icon.svg" alt="email-icon" />
-                <br />
-                <div class="contact-item-label" class="contact-link-email"><span class="contact-number">01.&nbsp;</span>EMAIL</div>
-                <br />
-                <div class="contact-item-link"><a href="" mail:michael@ode2code.co.nz">michael@ode2code.co.nz</a></div>
-                <br />
-            </div>
-
-            <div class="contact-item" id="phone-link">
-                <img class="contact-item-img" src="../img/phone-icon.svg" alt="phone-icon" />
-                <br />
-                <div class="contact-item-label" class="contact-link-phone"><span class="contact-number">02.&nbsp;</span>PHONE</div>
-                <br />
-                <div class="contact-item-link"><a href="tel:64-027-348-8482">+64 021 954 528</a></div>
-                <br />
-            </div>
-            <br />
-        </div>
-
-        <div class="contact-form">
-            <div class="contact-form-header">Book a Free Strategy Session</div>
-            <br />
-            <form class="contact-form-body gform pure-form pure-form-stacked" method="POST"
-                  action="https://script.google.com/macros/s/AKfycbyaJMGUom6EgI3TFWRC1SrHRfqPUSUE_mrkgx337zUOc6-gbxa5WA5ESt58fH5Iz-3E/exec">
-                <!-- change the form action to your script url -->
-
-                <div class="form-elements">
-                    <fieldset class="contact-field">
-                        <input class="contact-input" id="name" name="name" placeholder="Your name" required />
-                        <label class="contact-input-label" for="name"><span class="contact-input-number">01.&nbsp;</span>NAME</label>
-
-                    </fieldset>
-                    <br />
+    <div id="hero-animation" class="hero-animation" style="height: 75vh !important">
+        <canvas id="demo-canvas" class="animation-canvas" height="500"></canvas>
+        <div class="contact-content" style="margin-top: 8em;">
+            <h2 class="left">Contact Us</h2>
+            <p class="left">Send us a brief description of your requirements so we may go through them before our first meeting.</p>
 
 
-                    <fieldset class="contact-field">
-                        <input class="contact-input" id="email" name="email" type="email" value=""
-                               placeholder="Your email address" required />
-                        <label class="contact-input-label" for="email">
-                            <span class="contact-input-number">02.&nbsp;</span>EMAIL
-                        </label>
-
-
-                    </fieldset>
-                    <br />
-                    <fieldset class="contact-field">
-                        <input class="contact-input" id="phone" name="phone" placeholder="Your phone number" />
-
-                        <label class="contact-input-label" for="phone"><span class="contact-input-number">03.&nbsp;</span>PHONE</label>
-                    </fieldset>
-                    <br />
-                    <fieldset class="contact-field">
-                        <input class="contact-input" id="company" name="company" placeholder="Name of your company" />
-
-                        <label class="contact-input-label" for="company"><span class="contact-input-number">04.&nbsp;</span>COMPANY</label>
-                    </fieldset>
-                    <br />
-                    <fieldset class="contact-field">
-                        <textarea class="contact-textarea" id="message" name="message" rows="10"
-                                  placeholder="Your message" required></textarea>
-                        <label class="contact-input-label" for="message"><span class="contact-input-number">05.&nbsp;</span>MESSAGE</label>
-
-                    </fieldset>
-                    <br />
-                    <fieldset class="pure-group honeypot-field">
-                        <label for="honeypot">To help avoid spam, utilize a Honeypot technique with a hidden text field; must be empty to submit the form! Otherwise, we assume the user is a spam bot.</label>
-                        <input id="honeypot" type="text" name="honeypot" value="" />
-                    </fieldset>
-
-                    <button class="button-success pure-button button-xlarge" class="contact-submit-button">
-                        <i class="fa fa-paper-plane"></i>&nbsp;Send
-                    </button>
+            <div class="two-columns center" style="padding: 5em 6em;">
+                <div class="card left card-lift" style="max-width: 40%; padding: 4em 2em; cursor: pointer">
+                    <img class="contact-item-img" src="../img/email-icon.svg" alt="email-icon" />
+                    <div class="contact-item-label" style="font-weight: 500;"><span class="contact-number">01. </span>Email</div>
+                    <div class="contact-item-link"><a href="mailto:michael@ode2code.co.nz">michael@ode2code.co.nz</a></div>
                 </div>
-
-                <!-- Customise the Thankyou Message People See when they submit the form: -->
-                <div style="display:none" class="thankyou_message">
-                    <!-- You can customize the thankyou message by editing the code below -->
-                    <h2>
-                        <em>Thanks</em> for contacting us! We will get back to you soon!
-                    </h2>
-                </div>
-
-                <!-- Customise the Thankyou Message People See when they submit the form: -->
-                <div style="display:none" class="thankyou_message">
-                    <!-- You can customize the thankyou message by editing the code below -->
-                    <h2>
-                        <em>Thanks</em> for contacting us! We will get back to you soon!
-                    </h2>
-                </div>
-            </form>
-
-            <br />
-        </div>
-    </div>
-    <div class="footer">
-        <div id="footer-items">
-            <img class="footer-logo" src="../img/logo.svg" alt="ode2code-logo" />
-            
-            <div class="center white">© 2020 ode2code</div>
-            <div class="footer-links">
-                <div class="footer-links-container">
-                    <a class="footer-link" href="../index.html">HOME</a>
-                    <a class="footer-link" href="what-we-do.html">WHAT WE DO</a>
-                    <a class="footer-link" href="who-we-are.html">WHO WE ARE</a>
-                    <a class="footer-link" href="how-we-work.html">HOW WE WORK</a>
+                <div class="card right card-lift" style="max-width: 40%; padding: 4em 2em; cursor: pointer">
+                    <img class="contact-item-img" src="../img/phone-icon.svg" alt="phone-icon" />
+                    <div class="contact-item-label" style="font-weight: 500;"><span class="contact-number">02. </span>Phone</div>
+                    <div class="contact-item-link"><a href="tel:64-027-348-8482">+64 021 954 528</a></div>
                 </div>
             </div>
         </div>
     </div>
+    
+
+    <div style="
+            background-color: white;
+            z-index: 20;
+            position: absolute;
+            width: 100%;
+            top: 47em;">
+        <div class="line-container">
+            <div class="animated-line"></div>
+        </div>
+
+
+
+        <div class="container" style="margin-top: 8em; margin-bottom: 4em;">
+ 
+
+
+            <div class="center">
+                <div class="card  left" style="width: 75%">
+                    <h2>Book a Free Strategy Session</h2>
+                    <form method="POST" action="https://script.google.com/macros/s/AKfycbyaJMGUom6EgI3TFWRC1SrHRfqPUSUE_mrkgx337zUOc6-gbxa5WA5ESt58fH5Iz-3E/exec">
+                        <fieldset style="padding: 1em 0; width: 100%;">
+                            <label for="name"><span class="contact-input-number">01. </span>Name</label>
+                            <input style="" id="name" name="name" placeholder="" required />
+                        </fieldset>
+
+                        <fieldset style="padding: 1em 0; width: 100%;">
+                            <label for="email"><span class="contact-input-number">02. </span>Email</label>
+                            <input style="" id="email" name="email" placeholder="" required />
+                        </fieldset>
+
+                        <fieldset style="padding: 1em 0; width: 100%;">
+                            <label for="phone"><span class="contact-input-number">03. </span>Phone</label>
+                            <input style="" id="phone" name="phone" placeholder="" />
+                        </fieldset>
+
+                        <fieldset style="padding: 1em 0; width: 100%;">
+                            <label for="company"><span class="contact-input-number">04. </span>Company Name</label>
+                            <input style="" id="company" name="name" placeholder="" />
+                        </fieldset>
+
+                        <fieldset style="padding: 1em 0; width: 100%;">
+                            <label for="message"><span class="contact-input-number">05. </span>Message</label>
+                            <textarea style="" id="message" name="message" rows="10"
+                                      placeholder="Send us a brief description of your requirements so we may go through them before our first meeting." required>
+                    </textarea>
+                        </fieldset>
+
+                        <fieldset class="honeypot-field">
+                            <label for="honeypot">To help avoid spam, utilize a Honeypot technique with a hidden text field; must be empty to submit the form! Otherwise, we assume the user is a spam bot.</label>
+                            <input type="text" id="honeypot" name="honeypot" value="" />
+                        </fieldset>
+
+                        <button class="contact-submit-button">
+                            <i class="fa fa-paper-plane"></i>&nbsp;Send
+                        </button>
+
+                        <div style="display:none" class="thankyou_message">
+                            <!-- You can customize the thankyou message by editing the code below -->
+                            <h2>
+                                <em>Thanks</em> for contacting us! We will get back to you soon!
+                            </h2>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="footer-items" style="min-height: 500px;">
+                <img class="footer-logo" src="../img/logo.svg" alt="ode2code-logo" />
+
+                <div id="footer-links">
+                    <div id="footer-links-container">
+                        <a class="footer-link" href="../index.html">HOME</a>
+                        <a class="footer-link" href="what-we-do.html">WHAT WE DO</a>
+                        <a class="footer-link" href="who-we-are.html">WHO WE ARE</a>
+                        <a class="footer-link" href="how-we-work.html">HOW WE WORK</a>
+                    </div>
+                </div>
+
+                <div class="center white">© 2020 ode2code</div>
+            </div>
+        </div>
+    </div>
+
+
+    
 
     <!-- Submit the Form to Google Using "AJAX" -->
     <script data-cfasync="false" type="text/javascript" src="../js/form-submission-handler.js"></script>
