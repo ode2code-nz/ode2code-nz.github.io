@@ -62,66 +62,65 @@
     </nav>
 
     <!-- Header -->
-    
-<!--Feedback-->
-<!--You have a tendency to over code the css, which I understand as you want control over all the elements. What you should try to do is start with the
-bottom-most container. The <div>that wraps around the rest of the stuff.</div> you can define padding, positioning (usually using display flex) and 
-other base styles (background image etc) in this container. If you define sub-styles (such as the color of the text) in the base you will not need
-to do it in the nested tag <p><h1> etc-->
+    <!--Feedback-->
+    <!--You have a tendency to over code the css, which I understand as you want control over all the elements. What you should try to do is start with the
+    bottom-most container. The <div>that wraps around the rest of the stuff.</div> you can define padding, positioning (usually using display flex) and
+    other base styles (background image etc) in this container. If you define sub-styles (such as the color of the text) in the base you will not need
+    to do it in the nested tag <p><h1> etc-->
+    <!--Example-->
+    <!--Note, I have put the css in style for clarity, but in real life it should be in one or multiple classes in the code. Classes can be doubled up and
+    have inheritance (class="DefineFirstColor DefineSecondColor" : the second color will override the first.).-->
 
-<!--Example-->
-<!--Note, I have put the css in style for clarity, but in real life it should be in one or multiple classes in the code. Classes can be doubled up and
-have inheritance (class="DefineFirstColor DefineSecondColor" : the second color will override the first.).-->
-
-<div style="padding: 1em 3em; 
-            display: flex; 
-            flex-direction: row; 
-            flex-wrap: nowrap; 
-            align-items: center; 
-            justify-items: center; 
-            color: white; 
-            font-weight: 500;"> 
-    
-    <h2>Example</h2> <!--This will be centered, be padded, will not wrap and text will be bold and white.-->
-</div>
-<!--/Feedback-->
-
-<div class="page-heading center">
-        <h2 class="white">Who We Are</h2>
-    </div>
-
-    <div class="who-we-are-element our-passion-is">
-        <h1 class="element-header">Our passion is reliable useful software</h1>
-        <br />
-        <div class="element-body"> <!--The compiler cannot find, or you haven't defined this class. If the tag (div, p, h1 etc.) does not need any special css you do not need to add a class to it.-->
-            <p class="same-line-bold element-text our-passion-text">
-                <!--This br/ applies a break and then removes it with the class. It is redundant.-->
-                The ode2code team love to solve business problems<br class="our-passion-text-break"/> by building great software.
-            </p>
+   
+    <!--/Feedback-->
+    <div class="page-heading-two-columns">
+        <div class="left">
+            <h2 class="header white">Who We Are</h2>
         </div>
-    </div>
+        <div class="right"></div>
+      </div>
     <div class="line-container line-right">
         <div class="animated-line"></div>
     </div>
-    <div class="who-we-are-element how-we-help" >
-        <h1 class="element-header">How we help</h1>
+    <div class="who-we-are-element our-passion-is">
+        <h1 class="element-header">Our passion is reliable useful software</h1>
         <br />
-        <p class="element-text how-we-help-text">
-
-
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut id urna at erat sagittis dignissim quis ac ligula. Proin efficitur ante quis varius tempus. Quisque vel erat non ex luctus lobortis et a ex. Donec sed euismod risus, non lacinia risus. Phasellus lorem enim, pulvinar nec convallis quis, posuere in eros. Sed sem turpis, auctor ut magna eget, pretium facilisis libero. Sed nec tincidunt erat. In egestas eu ligula ultricies tempus. Sed eu leo ultricies, tristique lacus ac, semper ante. Mauris lorem arcu, egestas vel enim quis, sagittis dignissim lectus. Fusce facilisis eu lectus id interdum. Fusce euismod elit a consectetur aliquam. Ut ut magna ac est fermentum scelerisque. Nullam dignissim risus id turpis hendrerit, a consequat arcu tempus. Praesent vehicula molestie nisi, id scelerisque nisi porttitor ac.
-            <br /><br />
-            Nunc non accumsan dui, nec convallis nisi. Aliquam varius venenatis mi ut ornare. Nunc bibendum semper orci, vitae tempor tortor vulputate non. Integer eget magna sit amet eros lobortis venenatis a vitae tortor. In elementum placerat ultricies. Morbi massa felis, convallis ac maximus a, accumsan consectetur odio. Aliquam congue, neque in lobortis lobortis, odio tortor condimentum nisi, non maximus libero orci eu massa.
-        </p>
+        <div class="element-body">
+            <!--The compiler cannot find, or you haven't defined this class. If the tag (div, p, h1 etc.) does not need any special css you do not need to add a class to it.-->
+            <p class="same-line-bold element-text our-passion-text">
+                <!--This br/ applies a break and then removes it with the class. It is redundant.-->
+                The ode2code team love to solve business problems<br class="our-passion-text-break" /> by building great software.
+            </p>
+        </div>
+    </div>
+    <div class="who-we-are-element how-do-we-help ">
+        <h1 class="element-header">How do we help</h1>
+        <br />
+        <div class="element-body">
+            <!--The compiler cannot find, or you haven't defined this class. If the tag (div, p, h1 etc.) does not need any special css you do not need to add a class to it.-->
+            <p class="same-line-bold element-text how-we-help-text">
+                <!--This br/ applies a break and then removes it with the class. It is redundant.-->
+                We are appraoachable down to earth software developers the want o guide you.
+                <br />
+                Approachable to normal people.
+                <br />
+                we're senior team by design.
+                <br />
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                <br />
+                commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+        </div>
     </div>
     <div class="line-container line-left">
         <div class="animated-line"></div>
     </div>
 
-        <div class="who-we-are-element center our-values">
+
+    <div class="who-we-are-element center our-values">
         <h1 class="element-header">Our Software Development Values</h1>
         <br /> <!--div will naturally be padded, better to define the padding of the div class below first before adding any breaks.-->
-        <div class="element-body">
+
 
 
             <div class="value-cards">
@@ -141,7 +140,7 @@ have inheritance (class="DefineFirstColor DefineSecondColor" : the second color 
                 <div class="card value-card">
                     <img class="value-image" src="https://static3.depositphotos.com/1002188/144/i/600/depositphotos_1448005-stock-photo-smile.jpg">
                     <h2 class="value-card-heading">
-                        Communication/<br class="responsive-break"/>Clarity
+                        Communication/<br class="responsive-break" />Clarity
                     </h2>
                     <p class="value-card-description">
                         Mewtwo is a Pokémon created by science. It is a bipedal, humanoid Pokémon with some feline features.
@@ -151,10 +150,22 @@ have inheritance (class="DefineFirstColor DefineSecondColor" : the second color 
                     </p>
                 </div>
                 <div class="card value-card">
-                <img class="value-image" src="https://static3.depositphotos.com/1002188/144/i/600/depositphotos_1448005-stock-photo-smile.jpg">
-                <h2 class="value-card-heading">
-                    Reliability<br class="responsive-break"/><br />
-                </h2>
+                    <img class="value-image" src="https://static3.depositphotos.com/1002188/144/i/600/depositphotos_1448005-stock-photo-smile.jpg">
+                    <h2 class="value-card-heading">
+                        Reliability<br class="responsive-break" /><br />
+                    </h2>
+                    <br />
+                    <p class="value-card-description">
+                        Snorlax is often found in mountains and forests. It wakes up only to eat, requiring 900 lbs. (400 kg) of food per day before returning to its slumber.
+                        <br /><br />
+                        It can also eat while it is resting. Snorlax is docile enough to let children and small Pokémon bounce on its large stomach.
+                    </p>
+                </div>
+                <div class="card value-card">
+                    <img class="value-image" src="https://static3.depositphotos.com/1002188/144/i/600/depositphotos_1448005-stock-photo-smile.jpg">
+                    <h2 class="value-card-heading">
+                        Reliability<br class="responsive-break" /><br />
+                    </h2>
                     <br />
                     <p class="value-card-description">
                         Snorlax is often found in mountains and forests. It wakes up only to eat, requiring 900 lbs. (400 kg) of food per day before returning to its slumber.
@@ -165,12 +176,12 @@ have inheritance (class="DefineFirstColor DefineSecondColor" : the second color 
             </div>
 
         </div>
-    </div>
+
 
     <div class="nz element-body element-text" alt="nz-banner">
         <div class="white banner-text" align="left">
-            <div class="no-wrap">We are proud to be a<span class="banner-text-break" ><br /></span> New Zealand<span class="banner-text-break-normal"><br /></span> company<span class="banner-text-break"><br /></span> creating solutions gloabally.</div>
-</div>
+            <div class="no-wrap">We are proud to be a<span class="banner-text-break"><br /></span> New Zealand<span class="banner-text-break-normal"><br /></span> company<span class="banner-text-break"><br /></span> creating solutions gloabally.</div>
+        </div>
     </div>
 
     <div class="who-we-are-element center the-team">
@@ -182,9 +193,9 @@ have inheritance (class="DefineFirstColor DefineSecondColor" : the second color 
                 <div class="card team-card ">
                     <div class="team-card-inner">
                         <div class="team-card-front">
-                      
-                                <img class="team-card-image" src="https://archives.bulbagarden.net/media/upload/thumb/4/41/130Gyarados.png/375px-130Gyarados.png" />
-                   
+
+                            <img class="team-card-image" src="https://archives.bulbagarden.net/media/upload/thumb/4/41/130Gyarados.png/375px-130Gyarados.png" />
+
                         </div>
                         <div class="team-card-back">
                             <h2 class="member-name">
@@ -202,8 +213,8 @@ have inheritance (class="DefineFirstColor DefineSecondColor" : the second color 
                 <div class="card team-card">
                     <div class="team-card-inner">
                         <div class="team-card-front">
-                                <img class="team-card-image" src="https://archives.bulbagarden.net/media/upload/thumb/7/78/150Mewtwo.png/375px-150Mewtwo.png" />
-                      </div>
+                            <img class="team-card-image" src="https://archives.bulbagarden.net/media/upload/thumb/7/78/150Mewtwo.png/375px-150Mewtwo.png" />
+                        </div>
                         <div class="team-card-back">
                             <h2 class="member-name">
                                 Mewtwo
@@ -220,9 +231,9 @@ have inheritance (class="DefineFirstColor DefineSecondColor" : the second color 
                 <div class="card team-card">
                     <div class="team-card-inner">
                         <div class="team-card-front">
-         
-                                <img class="team-card-image" src="https://archives.bulbagarden.net/media/upload/thumb/f/fb/143Snorlax.png/375px-143Snorlax.png" />
-              
+
+                            <img class="team-card-image" src="https://archives.bulbagarden.net/media/upload/thumb/f/fb/143Snorlax.png/375px-143Snorlax.png" />
+
                         </div>
                         <div class="team-card-back">
                             <h2 class="member-name">
@@ -247,7 +258,7 @@ have inheritance (class="DefineFirstColor DefineSecondColor" : the second color 
             <img class="footer-logo" src="../img/logo.svg" alt="ode2code-logo" />
             <div class="footer-cta">
                 <div>
-                    <h1 class="footer-cta-header nowrap">
+                    <h1 class="footer-cta-header">
                         <span class="no-wrap">Are you ready</span>  <span class="no-wrap">to get started?</span>
                         <br />
                         <span class="no-wrap">Book a Free</span> <span class="no-wrap">strategy session</span>
@@ -259,6 +270,7 @@ have inheritance (class="DefineFirstColor DefineSecondColor" : the second color 
                 <a class="btn-primary footer-cta-button" href="contact.html">GET IN TOUCH</a>
 
             </div>
+            <div class="center white">© 2020 ode2code</div>
             <div class="footer-links">
                 <div class="footer-links-container">
                     <a class="footer-link" href="../index.html">HOME</a>
