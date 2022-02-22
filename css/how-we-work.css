@@ -1,3 +1,124 @@
 .page-heading-two-columns {
     background-image: url(../img/how-we-work-stock.png) !important;
 }
+.card-container {
+    display:flex;
+    flex-direction:column;
+    width: 50%;
+
+    max-width: 80vw;
+    margin:auto;
+    padding: 4em 1em 4em 1em;
+    /*border:solid 1px;*/
+}
+.card {
+    width: 70%;
+    max-width: 600px;
+    margin: 5em 0 5em 0;
+/*   animation-duration: 2s;
+   animation-fill-mode: forwards;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-duration: 2s;
+    -moz-animation-fill-mode: forwards;*/
+}
+    .card.right {
+        align-self: flex-start;
+    }
+    .card.left {
+        align-self: flex-end;
+    }
+    .reveal {
+        position: relative;
+        opacity: 0;
+        transition: 2s all ease;
+    }
+        .card.right.reveal {
+            transform: translateX(50%);
+        }
+        .card.left.reveal {
+        transform: translateX(-50%);
+}
+    .reveal.active {
+        /*transform: translateY(0);*/
+        opacity: 1;
+    }
+        .card.right.reveal.active {
+            transform: translateX(0);
+        }
+
+        .card.left.reveal.active {
+            transform: translateX(0);
+        }
+    
+/*    .card.right {
+        align-self: flex-start;
+        animation-name: slidein-right
+    }
+
+    .card.left {
+        align-self: flex-end;
+        animation-name: slidein-left
+    }
+@-moz-keyframes slidein-left {
+    from {
+        margin-right: 50%;
+    }
+
+    to {
+        margin-right: 0%;
+    }
+}
+@-moz-keyframes slidein-right {
+    from {
+        margin-left: 50%;
+    }
+
+    to {
+        margin-left: 0;
+    }
+}
+
+@-webkit-keyframes slidein-left {
+    from {
+        margin-right: 50%;
+    }
+
+    to {
+        margin-right: 0%;
+    }
+}
+@-webkit-keyframes slidein-right {
+    from {
+        margin-left: 50%;
+    }
+
+    to {
+        margin-left: 0;
+    }
+}
+
+
+@keyframes slidein-left {
+    from {
+        margin-right: 50%;
+    }
+
+    to {
+        margin-right: 0%;
+    }
+}
+
+@keyframes slidein-right
+{
+    from {
+        margin-left: 50%;
+    }
+    to {
+        margin-left: 0;
+    }
+}*/
+
+
+
+
