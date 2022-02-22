@@ -261,27 +261,29 @@ fieldset textarea {
     min-width: 100%;
 }
 
-fieldset input {
-    color: #046096;
-    font-weight: 600;
-}
+    fieldset input {
+        color: var(--text);
+        font-weight: 400;
+        font-size: 15px;
+    }
 
     fieldset input::placeholder,
     fieldset textarea::placeholder {
-        color: #046096;
+        color: var(--text);
         font-weight: 500;
     }
 
 fieldset textarea {
-    color: #046096;
-    font-weight: 500;
+    color: var(--text);
+    font-weight: 400;
+    font-size: 14px;
 }
 
     fieldset input,
     fieldset textarea,
     .contact-submit-button {
-        border-color: lightgrey;
-        border-width: 0px;
+        border-color: white;
+        border-width: 0;
         border-radius: 3px 3px;
         box-shadow: 2px 2px 4px 2px var(--box-shadow) !important;
         padding: 2px 15px 4px 15px;
@@ -291,8 +293,8 @@ input:focus,
 input:focus-visible,
 textarea:focus,
 textarea:focus-visible {
-    border-color: #4BAEDA !important;
-    border-width: 1px !important;
+    outline: none;
+    border: solid 2px #4BAEDA;
     box-shadow: none !important;
     border-radius: 2px 15px !important;
 }
