@@ -2,23 +2,32 @@
     background-image: url(../img/how-we-work-stock.png) !important;
 }
 
-.main-content{
+/*.main-content{
     margin-top:15em;
     height:2200px;
 
-}
-img {
+}*/
+
+/*img {
     position: absolute;
     z-index: -1;
     height: 1800px;
     left: 50%;
     transform: translateX(-50%);
     object-fit: contain;
-}
+}*/
 
 .background {
-    border: solid 3px black ;
+    position: absolute;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin: 3em 0;
 }
+
 .card-container {
     display:flex;
     flex-direction:column;
@@ -28,17 +37,16 @@ img {
     margin:auto;
     padding: 0 1em 4em 1em;
 }
-.card {
+.shift-card {
     width: 650px;
-    height:400px;
-    margin: 0 0 5em 0;
-    font-weight:600;
+    height: 400px;
+    margin: 9em 0;
 }
-    .card.left {
+    .shift-card.left {
         align-self: flex-start;
-        text-align:right;
+        text-align: right;
     }
-    .card.right {
+    .shift-card.right {
         align-self: flex-end;
         text-align: left;
     }
@@ -47,23 +55,23 @@ img {
         opacity: 0;
         transition: 2s all ease;
     }
-        .card.right.reveal {
-            transform: translateX(50%);
-        }
-        .card.left.reveal {
-        transform: translateX(-50%);
+.shift-card.right.reveal {
+    transform: translateX(50%);
+}
+.shift-card.left.reveal {
+    transform: translateX(-50%);
 }
     .reveal.active {
         /*transform: translateY(0);*/
         opacity: 1;
     }
-        .card.right.reveal.active {
-            transform: translateX(0);
-        }
+.shift-card.right.reveal.active {
+    transform: translateX(0);
+}
 
-        .card.left.reveal.active {
-            transform: translateX(0);
-        }
+.shift-card.left.reveal.active {
+    transform: translateX(0);
+}
 
 /*Blocks for spacing*/
 .empty-space#consultation-scoping {
@@ -80,8 +88,8 @@ img {
 }
 
 /*FAQ*/
-.card.faq{
-   margin:auto;
+.shift-card.faq {
+    margin: auto;
 }
 
 /*place checkbox behind label*/
@@ -133,7 +141,7 @@ input {
     transition: all 0.35s;
 }
 
-input:checked + .faq-element-label {
+/*input:checked + .faq-element-label {
     background: green;
 }
 
@@ -145,3 +153,4 @@ input:checked ~ .faq-element-content {
     max-height: 100vh;
     padding: 1em;
 }
+*/

@@ -38,7 +38,6 @@
 .how-do-we-help {
     margin: auto;
     align-content: center;
-    text-align: right;
     width: 60%;
     padding: 6em 0 3em 0;
 }
@@ -79,8 +78,9 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    width:100%;
-    margin:auto;
+    width: 100%;
+    margin: auto;
+    max-width: 1024px;
 }
 .value-card {
     display: flex;
@@ -93,8 +93,8 @@
 
 
 .value-image {
-    height:90px;
-    width:90px;
+    height:60px;
+    width: auto;
     align-self:center;
     margin: 1em;
 }

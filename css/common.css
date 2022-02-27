@@ -205,6 +205,10 @@
     background-color: white;
 }
 
+.card-bg {
+    background-image: url(../img/card-bg.png);
+}
+
 @media (min-width: 768px) {
     .navbar-nav li a {
         padding-top: 0 !important;
@@ -298,7 +302,6 @@ textarea:focus-visible {
     box-shadow: none !important;
     border-radius: 2px 15px !important;
 }
-
 
 
 
