@@ -101,10 +101,7 @@
 }
 
 .btn-primary {
-    background: -webkit-linear-gradient(to right, var(--primary-color), var(--secondary-color));
-    background: -o-linear-gradient(to right, #072450, #0298d7);
-    background: -moz-linear-gradient(to right, #072450, #0298d7);
-    background: linear-gradient(to right, #072450, #0298d7);
+    background-image: linear-gradient(to right, #072450 0%, #0298d7 51%, #072450 100%);
     width: 275px;
     height: 45px;
     border: none;
@@ -117,13 +114,12 @@
     justify-content: space-evenly;
     align-items: center;
     color: white;
+    transition: 0.5s;
+    background-size: 200% auto;
 }
 
     .btn-primary:hover {
-        background: -webkit-linear-gradient(to right, var(--secondary-color), var(--primary-color));
-        background: -o-linear-gradient(to right,#0298d7, #072450);
-        background: -moz-linear-gradient(to right, #0298d7, #072450);
-        background: linear-gradient(to right, #0298d7, #072450);
+        background-position: right center; 
     }
 
 .secondary-btn {
