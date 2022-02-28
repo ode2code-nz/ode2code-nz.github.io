@@ -203,10 +203,17 @@
     box-shadow: 2px 2px 4px 2px var(--box-shadow) !important;
     padding: 2px 15px 4px 15px;
     background-color: white;
+    max-width: 1200px;
 }
 
-.card-bg {
-    background-image: url(../img/card-bg.png);
+.card-bg-left {
+    background-image: url(../img/web-left.png);
+    background-size: cover;
+}
+
+.card-bg-right {
+    background-image: url(../img/web-right.png);
+    background-size: cover;
 }
 
 @media (min-width: 768px) {
